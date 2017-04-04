@@ -1,0 +1,1378 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+ 
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+<iframe src="/17658667/digital_wallets/dialog" scrolling="no" style="position: fixed; top: 40px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe>
+
+
+<!-- MODALS -->
+
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+ 
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+<iframe src="/17658667/digital_wallets/dialog" scrolling="no" style="position: fixed; top: 40px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe>
+
+
+<!-- MODALS -->
+
+
+{% comment %}
+        Below is modal content for Encens
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8882260808" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                  <div class="quick-product-photo-container col-sm-12 owl-carousel owl-theme owl-loaded">
+                    
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 567px;"><div class="owl-item active" style="width: 567px; margin-right: 0px;"><img data-image="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_2048x2048.gif" src="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_grande.gif" alt="" class="img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/atelier-cologne/products/encens-jinhae-by-atelier-cologne" title="Encens Jinhae by Atelier Cologne">Encens Jinhae by Atelier Cologne</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/atelier-cologne" title="">Atelier Cologne</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$150.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8882260808" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="31650839560">
+                    100 ml - $150.00
+                    </option>
+                  
+                    <option value="31650839624">
+                    200 ml - $195.00
+                    </option>
+                  
+                    <option value="31650839496">
+                    30 ml - Spray + Leather case - $78.00
+                    </option>
+                  
+                    <option value="31653839304">
+                    200 ml + 30 ml + Etui Cuir / Leather Case - $210.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="100 ml" data-value="100 ml" class="btn btn-primary  swatch-element 100-ml available">
+            <input autocomplete="off" id="swatch-0-100-ml" type="radio" name="option-0" value="100 ml"> 
+        
+            
+              100 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .100-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml" data-value="200 ml" class="btn btn-primary  swatch-element 200-ml available">
+            <input autocomplete="off" id="swatch-0-200-ml" type="radio" name="option-0" value="200 ml"> 
+        
+            
+              200 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="30 ml - Spray + Leather case" data-value="30 ml - Spray + Leather case" class="btn btn-primary  swatch-element 30-ml-spray-leather-case available">
+            <input autocomplete="off" id="swatch-0-30-ml-spray-leather-case" type="radio" name="option-0" value="30 ml - Spray + Leather case"> 
+        
+            
+              30 ml - Spray + Leather case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .30-ml-spray-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml + 30 ml + Etui Cuir / Leather Case" data-value="200 ml + 30 ml + Etui Cuir / Leather Case" class="btn btn-primary  swatch-element 200-ml-30-ml-etui-cuir-leather-case available">
+            <input autocomplete="off" id="swatch-0-200-ml-30-ml-etui-cuir-leather-case" type="radio" name="option-0" value="200 ml + 30 ml + Etui Cuir / Leather Case"> 
+        
+            
+              200 ml + 30 ml + Etui Cuir / Leather Case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml-30-ml-etui-cuir-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8882260808", {"id":8882260808,"title":"Encens Jinhae by Atelier Cologne","handle":"encens-jinhae-by-atelier-cologne","description":"","published_at":"2017-03-10T12:03:00-05:00","created_at":"2017-03-10T12:05:17-05:00","vendor":"Atelier Cologne","type":"Perfume","tags":["Atelier","Fragrance","Perfume"],"price":7800,"price_min":7800,"price_max":21000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":31650839560,"title":"100 ml","option1":"100 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Encens Jinhae by Atelier Cologne - 100 ml","public_title":"100 ml","options":["100 ml"],"price":15000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591225031"},{"id":31650839624,"title":"200 ml","option1":"200 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Encens Jinhae by Atelier Cologne - 200 ml","public_title":"200 ml","options":["200 ml"],"price":19500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591225000"},{"id":31650839496,"title":"30 ml - Spray + Leather case","option1":"30 ml - Spray + Leather case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Encens Jinhae by Atelier Cologne - 30 ml - Spray + Leather case","public_title":"30 ml - Spray + Leather case","options":["30 ml - Spray + Leather case"],"price":7800,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591225017"},{"id":31653839304,"title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option1":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Encens Jinhae by Atelier Cologne - 200 ml + 30 ml + Etui Cuir \/ Leather Case","public_title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","options":["200 ml + 30 ml + Etui Cuir \/ Leather Case"],"price":21000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591225048"}],"images":[],"featured_image":null,"options":["Size"],"content":""} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Philtre
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8882273480" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                  <div class="quick-product-photo-container col-sm-12 owl-carousel owl-theme owl-loaded">
+                    
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 567px;"><div class="owl-item active" style="width: 567px; margin-right: 0px;"><img data-image="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_2048x2048.gif" src="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_grande.gif" alt="" class="img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/atelier-cologne/products/philtre-ceylan-by-atelier-cologne" title="Philtre Ceylan by Atelier Cologne">Philtre Ceylan by Atelier Cologne</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/atelier-cologne" title="">Atelier Cologne</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$150.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8882273480" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="31650998600">
+                    100 ml - $150.00
+                    </option>
+                  
+                    <option value="31650998664">
+                    200 ml - $195.00
+                    </option>
+                  
+                    <option value="31650998536">
+                    30 ml + Spray + Leather case - $78.00
+                    </option>
+                  
+                    <option value="31653902216">
+                    200 ml + 30 ml + Etui Cuir / Leather Case - $210.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="100 ml" data-value="100 ml" class="btn btn-primary  swatch-element 100-ml available">
+            <input autocomplete="off" id="swatch-0-100-ml" type="radio" name="option-0" value="100 ml"> 
+        
+            
+              100 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .100-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml" data-value="200 ml" class="btn btn-primary  swatch-element 200-ml available">
+            <input autocomplete="off" id="swatch-0-200-ml" type="radio" name="option-0" value="200 ml"> 
+        
+            
+              200 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="30 ml + Spray + Leather case" data-value="30 ml + Spray + Leather case" class="btn btn-primary  swatch-element 30-ml-spray-leather-case available">
+            <input autocomplete="off" id="swatch-0-30-ml-spray-leather-case" type="radio" name="option-0" value="30 ml + Spray + Leather case"> 
+        
+            
+              30 ml + Spray + Leather case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .30-ml-spray-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml + 30 ml + Etui Cuir / Leather Case" data-value="200 ml + 30 ml + Etui Cuir / Leather Case" class="btn btn-primary  swatch-element 200-ml-30-ml-etui-cuir-leather-case available">
+            <input autocomplete="off" id="swatch-0-200-ml-30-ml-etui-cuir-leather-case" type="radio" name="option-0" value="200 ml + 30 ml + Etui Cuir / Leather Case"> 
+        
+            
+              200 ml + 30 ml + Etui Cuir / Leather Case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml-30-ml-etui-cuir-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8882273480", {"id":8882273480,"title":"Philtre Ceylan by Atelier Cologne","handle":"philtre-ceylan-by-atelier-cologne","description":"","published_at":"2017-03-10T12:09:00-05:00","created_at":"2017-03-10T12:13:13-05:00","vendor":"Atelier Cologne","type":"Perfume","tags":["Atelier","Fragrance","Perfume"],"price":7800,"price_min":7800,"price_max":21000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":31650998600,"title":"100 ml","option1":"100 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Philtre Ceylan by Atelier Cologne - 100 ml","public_title":"100 ml","options":["100 ml"],"price":15000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591226038"},{"id":31650998664,"title":"200 ml","option1":"200 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Philtre Ceylan by Atelier Cologne - 200 ml","public_title":"200 ml","options":["200 ml"],"price":19500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591226007"},{"id":31650998536,"title":"30 ml + Spray + Leather case","option1":"30 ml + Spray + Leather case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Philtre Ceylan by Atelier Cologne - 30 ml + Spray + Leather case","public_title":"30 ml + Spray + Leather case","options":["30 ml + Spray + Leather case"],"price":7800,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591226014"},{"id":31653902216,"title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option1":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Philtre Ceylan by Atelier Cologne - 200 ml + 30 ml + Etui Cuir \/ Leather Case","public_title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","options":["200 ml + 30 ml + Etui Cuir \/ Leather Case"],"price":21000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591226045"}],"images":[],"featured_image":null,"options":["Size"],"content":""} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Poivre
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8882276808" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                  <div class="quick-product-photo-container col-sm-12 owl-carousel owl-theme owl-loaded">
+                    
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 567px;"><div class="owl-item active" style="width: 567px; margin-right: 0px;"><img data-image="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_2048x2048.gif" src="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_grande.gif" alt="" class="img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/atelier-cologne/products/poivre-electrique-by-atelier-cologne" title="Poivre Electrique by Atelier Cologne">Poivre Electrique by Atelier Cologne</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/atelier-cologne" title="">Atelier Cologne</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$150.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8882276808" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="31651058184">
+                    100 ml - $150.00
+                    </option>
+                  
+                    <option value="31651058248">
+                    200 ml - $195.00
+                    </option>
+                  
+                    <option value="31651058056">
+                    30 ml - Spray + Leather case - $78.00
+                    </option>
+                  
+                    <option value="31653982280">
+                    200 ml + 30 ml + Etui Cuir / Leather Case - $210.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="100 ml" data-value="100 ml" class="btn btn-primary  swatch-element 100-ml available">
+            <input autocomplete="off" id="swatch-0-100-ml" type="radio" name="option-0" value="100 ml"> 
+        
+            
+              100 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .100-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml" data-value="200 ml" class="btn btn-primary  swatch-element 200-ml available">
+            <input autocomplete="off" id="swatch-0-200-ml" type="radio" name="option-0" value="200 ml"> 
+        
+            
+              200 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="30 ml - Spray + Leather case" data-value="30 ml - Spray + Leather case" class="btn btn-primary  swatch-element 30-ml-spray-leather-case available">
+            <input autocomplete="off" id="swatch-0-30-ml-spray-leather-case" type="radio" name="option-0" value="30 ml - Spray + Leather case"> 
+        
+            
+              30 ml - Spray + Leather case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .30-ml-spray-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml + 30 ml + Etui Cuir / Leather Case" data-value="200 ml + 30 ml + Etui Cuir / Leather Case" class="btn btn-primary  swatch-element 200-ml-30-ml-etui-cuir-leather-case available">
+            <input autocomplete="off" id="swatch-0-200-ml-30-ml-etui-cuir-leather-case" type="radio" name="option-0" value="200 ml + 30 ml + Etui Cuir / Leather Case"> 
+        
+            
+              200 ml + 30 ml + Etui Cuir / Leather Case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml-30-ml-etui-cuir-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8882276808", {"id":8882276808,"title":"Poivre Electrique by Atelier Cologne","handle":"poivre-electrique-by-atelier-cologne","description":"","published_at":"2017-03-10T12:14:00-05:00","created_at":"2017-03-10T12:15:03-05:00","vendor":"Atelier Cologne","type":"Perfume","tags":["Atelier","Fragrance","Perfume"],"price":7800,"price_min":7800,"price_max":21000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":31651058184,"title":"100 ml","option1":"100 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Poivre Electrique by Atelier Cologne - 100 ml","public_title":"100 ml","options":["100 ml"],"price":15000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591227035"},{"id":31651058248,"title":"200 ml","option1":"200 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Poivre Electrique by Atelier Cologne - 200 ml","public_title":"200 ml","options":["200 ml"],"price":19500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591227004"},{"id":31651058056,"title":"30 ml - Spray + Leather case","option1":"30 ml - Spray + Leather case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Poivre Electrique by Atelier Cologne - 30 ml - Spray + Leather case","public_title":"30 ml - Spray + Leather case","options":["30 ml - Spray + Leather case"],"price":7800,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591227011"},{"id":31653982280,"title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option1":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Poivre Electrique by Atelier Cologne - 200 ml + 30 ml + Etui Cuir \/ Leather Case","public_title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","options":["200 ml + 30 ml + Etui Cuir \/ Leather Case"],"price":21000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591227042"}],"images":[],"featured_image":null,"options":["Size"],"content":""} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Mimosa
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8882277768" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                  <div class="quick-product-photo-container col-sm-12 owl-carousel owl-theme owl-loaded">
+                    
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 567px;"><div class="owl-item active" style="width: 567px; margin-right: 0px;"><img data-image="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_2048x2048.gif" src="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_grande.gif" alt="" class="img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/atelier-cologne/products/mimosa-indigo-by-atelier-cologne" title="Mimosa Indigo by Atelier Cologne">Mimosa Indigo by Atelier Cologne</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/atelier-cologne" title="">Atelier Cologne</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$150.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8882277768" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="31651085064">
+                    100 ml - $150.00
+                    </option>
+                  
+                    <option value="31651085128">
+                    200 ml - $195.00
+                    </option>
+                  
+                    <option value="31651085000">
+                    30 ml + Spray + Leather case - $78.00
+                    </option>
+                  
+                    <option value="31654015560">
+                    200 ml + 30 ml + Etui Cuir / Leather Case - $210.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="100 ml" data-value="100 ml" class="btn btn-primary  swatch-element 100-ml available">
+            <input autocomplete="off" id="swatch-0-100-ml" type="radio" name="option-0" value="100 ml"> 
+        
+            
+              100 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .100-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml" data-value="200 ml" class="btn btn-primary  swatch-element 200-ml available">
+            <input autocomplete="off" id="swatch-0-200-ml" type="radio" name="option-0" value="200 ml"> 
+        
+            
+              200 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="30 ml + Spray + Leather case" data-value="30 ml + Spray + Leather case" class="btn btn-primary  swatch-element 30-ml-spray-leather-case available">
+            <input autocomplete="off" id="swatch-0-30-ml-spray-leather-case" type="radio" name="option-0" value="30 ml + Spray + Leather case"> 
+        
+            
+              30 ml + Spray + Leather case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .30-ml-spray-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml + 30 ml + Etui Cuir / Leather Case" data-value="200 ml + 30 ml + Etui Cuir / Leather Case" class="btn btn-primary  swatch-element 200-ml-30-ml-etui-cuir-leather-case available">
+            <input autocomplete="off" id="swatch-0-200-ml-30-ml-etui-cuir-leather-case" type="radio" name="option-0" value="200 ml + 30 ml + Etui Cuir / Leather Case"> 
+        
+            
+              200 ml + 30 ml + Etui Cuir / Leather Case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml-30-ml-etui-cuir-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8882277768", {"id":8882277768,"title":"Mimosa Indigo by Atelier Cologne","handle":"mimosa-indigo-by-atelier-cologne","description":"","published_at":"2017-03-10T12:15:00-05:00","created_at":"2017-03-10T12:16:29-05:00","vendor":"Atelier Cologne","type":"Perfume","tags":["Atelier","Fragrance","Perfume"],"price":7800,"price_min":7800,"price_max":21000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":31651085064,"title":"100 ml","option1":"100 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Mimosa Indigo by Atelier Cologne - 100 ml","public_title":"100 ml","options":["100 ml"],"price":15000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591228032"},{"id":31651085128,"title":"200 ml","option1":"200 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Mimosa Indigo by Atelier Cologne - 200 ml","public_title":"200 ml","options":["200 ml"],"price":19500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591228001"},{"id":31651085000,"title":"30 ml + Spray + Leather case","option1":"30 ml + Spray + Leather case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Mimosa Indigo by Atelier Cologne - 30 ml + Spray + Leather case","public_title":"30 ml + Spray + Leather case","options":["30 ml + Spray + Leather case"],"price":7800,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591228018"},{"id":31654015560,"title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option1":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Mimosa Indigo by Atelier Cologne - 200 ml + 30 ml + Etui Cuir \/ Leather Case","public_title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","options":["200 ml + 30 ml + Etui Cuir \/ Leather Case"],"price":21000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591228049"}],"images":[],"featured_image":null,"options":["Size"],"content":""} );
+    });
+  });
+
+  </script>
+</div>
+
+{% comment %}
+        Below is modal content for Tobacco
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8882284360" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                  <div class="quick-product-photo-container col-sm-12 owl-carousel owl-theme owl-loaded">
+                    
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 567px;"><div class="owl-item active" style="width: 567px; margin-right: 0px;"><img data-image="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_2048x2048.gif" src="//cdn.shopify.com/s/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_grande.gif" alt="" class="img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/atelier-cologne/products/tobacco-nuit-by-atelier-cologne" title="Tobacco Nuit by Atelier Cologne">Tobacco Nuit by Atelier Cologne</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/atelier-cologne" title="">Atelier Cologne</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$150.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8882284360" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="31651262472">
+                    100 ml - $150.00
+                    </option>
+                  
+                    <option value="31651262536">
+                    200 ml - $195.00
+                    </option>
+                  
+                    <option value="31651262408">
+                    30 ml + Spray + Leather case - $78.00
+                    </option>
+                  
+                    <option value="31654022472">
+                    200 ml + 30 ml + Etui Cuir / Leather Case - $210.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="100 ml" data-value="100 ml" class="btn btn-primary  swatch-element 100-ml available">
+            <input autocomplete="off" id="swatch-0-100-ml" type="radio" name="option-0" value="100 ml"> 
+        
+            
+              100 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .100-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml" data-value="200 ml" class="btn btn-primary  swatch-element 200-ml available">
+            <input autocomplete="off" id="swatch-0-200-ml" type="radio" name="option-0" value="200 ml"> 
+        
+            
+              200 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="30 ml + Spray + Leather case" data-value="30 ml + Spray + Leather case" class="btn btn-primary  swatch-element 30-ml-spray-leather-case available">
+            <input autocomplete="off" id="swatch-0-30-ml-spray-leather-case" type="radio" name="option-0" value="30 ml + Spray + Leather case"> 
+        
+            
+              30 ml + Spray + Leather case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .30-ml-spray-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="200 ml + 30 ml + Etui Cuir / Leather Case" data-value="200 ml + 30 ml + Etui Cuir / Leather Case" class="btn btn-primary  swatch-element 200-ml-30-ml-etui-cuir-leather-case available">
+            <input autocomplete="off" id="swatch-0-200-ml-30-ml-etui-cuir-leather-case" type="radio" name="option-0" value="200 ml + 30 ml + Etui Cuir / Leather Case"> 
+        
+            
+              200 ml + 30 ml + Etui Cuir / Leather Case  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .200-ml-30-ml-etui-cuir-leather-case').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8882284360", {"id":8882284360,"title":"Tobacco Nuit by Atelier Cologne","handle":"tobacco-nuit-by-atelier-cologne","description":"","published_at":"2017-03-10T12:18:00-05:00","created_at":"2017-03-10T12:24:37-05:00","vendor":"Atelier Cologne","type":"Perfume","tags":["Atelier","Fragrance","Perfume"],"price":7800,"price_min":7800,"price_max":21000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":31651262472,"title":"100 ml","option1":"100 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Tobacco Nuit by Atelier Cologne - 100 ml","public_title":"100 ml","options":["100 ml"],"price":15000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591229039"},{"id":31651262536,"title":"200 ml","option1":"200 ml","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Tobacco Nuit by Atelier Cologne - 200 ml","public_title":"200 ml","options":["200 ml"],"price":19500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591229008"},{"id":31651262408,"title":"30 ml + Spray + Leather case","option1":"30 ml + Spray + Leather case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Tobacco Nuit by Atelier Cologne - 30 ml + Spray + Leather case","public_title":"30 ml + Spray + Leather case","options":["30 ml + Spray + Leather case"],"price":7800,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591229015"},{"id":31654022472,"title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option1":"200 ml + 30 ml + Etui Cuir \/ Leather Case","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Tobacco Nuit by Atelier Cologne - 200 ml + 30 ml + Etui Cuir \/ Leather Case","public_title":"200 ml + 30 ml + Etui Cuir \/ Leather Case","options":["200 ml + 30 ml + Etui Cuir \/ Leather Case"],"price":21000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700591229046"}],"images":[],"featured_image":null,"options":["Size"],"content":""} );
+    });
+  });
+
+  </script>
+</div>
+
+
+

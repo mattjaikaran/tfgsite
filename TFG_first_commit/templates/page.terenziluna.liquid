@@ -1,0 +1,1019 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- MODALS -->
+
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+<iframe src="/17658667/digital_wallets/dialog" scrolling="no" style="position: fixed; top: 40px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe>
+
+
+<!-- MODALS -->
+
+
+{% comment %}
+        Below is modal content for Andromeda
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8658774728" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 542px;"><div class="owl-item active" style="width: 542px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/andromeda_grande.jpeg?v=1486578950" class="img-responsive owl-lazy" alt="Luna Andromeda 100ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/andromeda_grande.jpeg?v=1486578950" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/luna-andromeda-100ml-extrait-de-parfum-by-tiziana-terenzi" title="Luna Andromeda 100ml Extrait De Parfum by Tiziana Terenzi">Luna Andromeda 100ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$235.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p><span>Tiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature". Andromeda is inspired by a natural miracle of mother nature that occurs once a year in the Italian countryside, near the Terenzi family residence for hundreds of years: the Blossoming - “La Fiorita” Andromeda contains the majesty of this panorama and the ephemeral allure of the “Fiorita” (Flowered) festival, making you relive this dream-like season every time you wear it.</span><br><span></span></p>
+<p><strong>Notes:</strong></p>
+<p><span><strong>Top:</strong> Bergamot, Cut Grass, Ylang Ylang, Water Jasmine</span><br><span><strong>Middle:</strong> Lilium, Violet Leaves, Damask Rose, Pear nectar, Heliotrope, Peach</span><br><span><strong>Base:</strong> Coconut powder, Amber, Vanilla, Cashmere, Ebony, Tonka bean, Powdered sugar</span><br>&lt;.</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8658774728" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30263919432">
+                    Default Title - $235.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658774728", {"id":8658774728,"title":"Luna Andromeda 100ml Extrait De Parfum by Tiziana Terenzi","handle":"luna-andromeda-100ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature\". Andromeda is inspired by a natural miracle of mother nature that occurs once a year in the Italian countryside, near the Terenzi family residence for hundreds of years: the Blossoming - “La Fiorita” Andromeda contains the majesty of this panorama and the ephemeral allure of the “Fiorita” (Flowered) festival, making you relive this dream-like season every time you wear it.\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eTop:\u003c\/strong\u003e Bergamot, Cut Grass, Ylang Ylang, Water Jasmine\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eMiddle:\u003c\/strong\u003e Lilium, Violet Leaves, Damask Rose, Pear nectar, Heliotrope, Peach\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eBase:\u003c\/strong\u003e Coconut powder, Amber, Vanilla, Cashmere, Ebony, Tonka bean, Powdered sugar\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100m\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-08T13:33:00-05:00","created_at":"2017-02-08T13:35:49-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":23500,"price_min":23500,"price_max":23500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30263919432,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Luna Andromeda 100ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":23500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741632433"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/andromeda.jpeg?v=1486578950"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/andromeda.jpeg?v=1486578950","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature\". Andromeda is inspired by a natural miracle of mother nature that occurs once a year in the Italian countryside, near the Terenzi family residence for hundreds of years: the Blossoming - “La Fiorita” Andromeda contains the majesty of this panorama and the ephemeral allure of the “Fiorita” (Flowered) festival, making you relive this dream-like season every time you wear it.\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eTop:\u003c\/strong\u003e Bergamot, Cut Grass, Ylang Ylang, Water Jasmine\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eMiddle:\u003c\/strong\u003e Lilium, Violet Leaves, Damask Rose, Pear nectar, Heliotrope, Peach\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eBase:\u003c\/strong\u003e Coconut powder, Amber, Vanilla, Cashmere, Ebony, Tonka bean, Powdered sugar\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100m\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Cassiopea
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8658787336" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 542px;"><div class="owl-item active" style="width: 542px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/cass_grande.jpeg?v=1486579118" class="img-responsive owl-lazy" alt="Luna Cassiopea 100ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/cass_grande.jpeg?v=1486579118" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/luna-cassiopea-100ml-extrait-de-parfum-by-tiziana-terenzi" title="Luna Cassiopea 100ml Extrait De Parfum by Tiziana Terenzi">Luna Cassiopea 100ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$235.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p><span>Tiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature". Cassiopea takes its wearer on an imaginative journey to exotic places and hot summer nights counting shooting stars. Sweet and light, its as timeless as the constellation that lends the fragrance its name.</span><br><span></span></p>
+<p><strong>Notes: </strong></p>
+<p><span><strong>Top:</strong> Passion Fruit, Lemon &amp; Cassis, Fern</span><br><span><strong>Middle:</strong> Carnation, Lily of the Valley, Rosa Tea</span><br><span><strong>Base:</strong> Sandalwood, Tonka Bean, Musk</span><br><br><span>3.4 fl oz/100ml Extrait De Parfum</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8658787336" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30264107976">
+                    Default Title - $235.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658787336", {"id":8658787336,"title":"Luna Cassiopea 100ml Extrait De Parfum by Tiziana Terenzi","handle":"luna-cassiopea-100ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature\". Cassiopea takes its wearer on an imaginative journey to exotic places and hot summer nights counting shooting stars. Sweet and light, its as timeless as the constellation that lends the fragrance its name.\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotes: \u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eTop:\u003c\/strong\u003e Passion Fruit, Lemon \u0026amp; Cassis, Fern\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eMiddle:\u003c\/strong\u003e Carnation, Lily of the Valley, Rosa Tea\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eBase:\u003c\/strong\u003e Sandalwood, Tonka Bean, Musk\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-08T13:37:00-05:00","created_at":"2017-02-08T13:38:37-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":23500,"price_min":23500,"price_max":23500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30264107976,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Luna Cassiopea 100ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":23500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741642432"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/cass.jpeg?v=1486579118"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/cass.jpeg?v=1486579118","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature\". Cassiopea takes its wearer on an imaginative journey to exotic places and hot summer nights counting shooting stars. Sweet and light, its as timeless as the constellation that lends the fragrance its name.\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotes: \u003c\/strong\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eTop:\u003c\/strong\u003e Passion Fruit, Lemon \u0026amp; Cassis, Fern\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eMiddle:\u003c\/strong\u003e Carnation, Lily of the Valley, Rosa Tea\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eBase:\u003c\/strong\u003e Sandalwood, Tonka Bean, Musk\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Ursa Major
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8659407688" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1582px;"><div class="owl-item active" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/TTPROF_URS_singolo_grande.jpg?v=1488812157" class="img-responsive owl-lazy" alt="Ursa Major 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/TTPROF_URS_singolo_grande.jpg?v=1488812157" style="opacity: 1;"></div></div><div class="owl-item" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/TTPROF_URS_grande.jpg?v=1488812202" class="img-responsive owl-lazy" alt="Ursa Major 100 ml Extrait De Parfum by Tiziana Terenzi"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/ursa-major-100-ml-extrait-de-parfum-by-tiziana-terenzi" title="Ursa Major 100 ml Extrait De Parfum by Tiziana Terenzi">Ursa Major 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$235.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><p>Tiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature.</p>
+<p><strong>Size:</strong> 100 ml</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8659407688" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30273885192">
+                    Default Title - $235.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8659407688", {"id":8659407688,"title":"Ursa Major 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"ursa-major-100-ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cp\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature.\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eSize:\u003c\/strong\u003e 100 ml\u003c\/p\u003e","published_at":"2017-02-08T15:29:00-05:00","created_at":"2017-02-08T15:34:21-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Extract","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":23500,"price_min":23500,"price_max":23500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30273885192,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Ursa Major 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":23500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741652431"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/TTPROF_URS_singolo.jpg?v=1488812157","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/TTPROF_URS.jpg?v=1488812202"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/TTPROF_URS_singolo.jpg?v=1488812157","options":["Title"],"content":"\u003cp\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature.\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eSize:\u003c\/strong\u003e 100 ml\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Draco
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8659474056" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 542px;"><div class="owl-item active" style="width: 542px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/draco_grande.jpeg?v=1486586929" class="img-responsive owl-lazy" alt="Luna Draco 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/draco_grande.jpeg?v=1486586929" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/luna-draco-extrait-de-parfum-by-tiziana-terenzi" title="Luna Draco 100 ml Extrait De Parfum by Tiziana Terenzi">Luna Draco 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$235.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p><span>Tiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature". The story of Draco begins in the magnificent Italian city of Matera, the city of stones. Appearing as an inhabited moon, Matera is built on stone and rocks that have kept the town invisible due to its position. The nature of Draco mimics that of the city it is inspired by. As strong as the stone that supports its cavernous homes, Draco is warmed by earthy notes. Its true beauty waits to reveal itself, surfacing when you least expect it.</span></p>
+<p><strong>Notes</strong> -&nbsp;<br><span><strong>Top:</strong> Bergamot,Lemon, Orange, Green</span><br><span><strong>Middle:</strong> Peach, Jasmine, Cedar, Patchouli, Magnolia</span><br><span><strong>Base:</strong> Vanilla, Tonka, Musk, Pear, Heliotrope</span><br><span>3.4 fl oz/100ml Extrait De .</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8659474056" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30274885960">
+                    Default Title - $235.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8659474056", {"id":8659474056,"title":"Luna Draco 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"luna-draco-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature\". The story of Draco begins in the magnificent Italian city of Matera, the city of stones. Appearing as an inhabited moon, Matera is built on stone and rocks that have kept the town invisible due to its position. The nature of Draco mimics that of the city it is inspired by. As strong as the stone that supports its cavernous homes, Draco is warmed by earthy notes. Its true beauty waits to reveal itself, surfacing when you least expect it.\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotes\u003c\/strong\u003e - \u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eTop:\u003c\/strong\u003e Bergamot,Lemon, Orange, Green\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eMiddle:\u003c\/strong\u003e Peach, Jasmine, Cedar, Patchouli, Magnolia\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eBase:\u003c\/strong\u003e Vanilla, Tonka, Musk, Pear, Heliotrope\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-08T15:46:00-05:00","created_at":"2017-02-08T15:48:48-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":23500,"price_min":23500,"price_max":23500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30274885960,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Luna Draco 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":23500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741662430"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/draco.jpeg?v=1486586929"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/draco.jpeg?v=1486586929","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eTiziana Terenzi presents the new LUNA (Moon) collection. Luna is the place of lost memories, wishes, desires. Luna is evocative of far distant memories from childhood, mesmerizing fairytale landscapes, and wild nature\". The story of Draco begins in the magnificent Italian city of Matera, the city of stones. Appearing as an inhabited moon, Matera is built on stone and rocks that have kept the town invisible due to its position. The nature of Draco mimics that of the city it is inspired by. As strong as the stone that supports its cavernous homes, Draco is warmed by earthy notes. Its true beauty waits to reveal itself, surfacing when you least expect it.\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cstrong\u003eNotes\u003c\/strong\u003e - \u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eTop:\u003c\/strong\u003e Bergamot,Lemon, Orange, Green\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eMiddle:\u003c\/strong\u003e Peach, Jasmine, Cedar, Patchouli, Magnolia\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eBase:\u003c\/strong\u003e Vanilla, Tonka, Musk, Pear, Heliotrope\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Orion
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8997603528" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 508px;"><div class="owl-item active" style="width: 508px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/orion_grande.jpeg?v=1490373999" class="img-responsive owl-lazy" alt="Luna Orion 100ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/orion_grande.jpeg?v=1490373999" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/luna-orion-100ml-extrait-de-parfum-by-tiziana-terenzi" title="Luna Orion 100ml Extrait De Parfum by Tiziana Terenzi">Luna Orion 100ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$235.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8997603528" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="32613766664">
+                    Default Title - $235.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8997603528", {"id":8997603528,"title":"Luna Orion 100ml Extrait De Parfum by Tiziana Terenzi","handle":"luna-orion-100ml-extrait-de-parfum-by-tiziana-terenzi","description":"","published_at":"2017-03-24T12:41:00-04:00","created_at":"2017-03-24T12:44:10-04:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Feminine","Fragrance","Luna","Masculine","Perfume","Shared","Tiziana Terenzi"],"price":23500,"price_min":23500,"price_max":23500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":32613766664,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"TTPROF\/ORI","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Luna Orion 100ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":23500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741092480"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/orion.jpeg?v=1490373999"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/orion.jpeg?v=1490373999","options":["Title"],"content":""} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Adhil
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8659783176" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 508px;"><div class="owl-item active" style="width: 508px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/adhil_grande.jpg?v=1486590315" class="img-responsive owl-lazy" alt="Assoluto Adhil 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/adhil_grande.jpg?v=1486590315" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/assoluto-adhil-100-ml-extrait-de-parfum-by-tiziana-terenzi" title="Assoluto Adhil 100 ml Extrait De Parfum by Tiziana Terenzi">Assoluto Adhil 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$700.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">Tiziana Terenzi‰۪s parfum collection evokes a sense of wonder, embodying the essence of re-discovery, of recognizing the dearest possessions we thought we had lost, or perhaps did not even know that we had forgotten.
+<div class="the-details fragrance-detail">
+<p>The second fragrance of the Assoluto collection is Adhil Extrait De Parfum, famous star of the constellation Andromeda. The stylistic and creative principle is based on extreme research, almost acrobatic, which explores the boundaries of Andromeda and its continuous evolution. This creates an original and unique composition, built with precious and rare raw materials. Top notes of cassis fuse with heart notes of jasmine and base notes of Australian sandalwood and amber. The balance of tensions in this setting is breathtaking, like a warm breeze in a summer evening.</p>
+</div></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8659783176" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30278933128">
+                    Default Title - $700.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8659783176", {"id":8659783176,"title":"Assoluto Adhil 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"assoluto-adhil-100-ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003eTiziana Terenzi‰۪s parfum collection evokes a sense of wonder, embodying the essence of re-discovery, of recognizing the dearest possessions we thought we had lost, or perhaps did not even know that we had forgotten.\r\u003cdiv class=\"the-details fragrance-detail\"\u003e\r\u003cp\u003eThe second fragrance of the Assoluto collection is Adhil Extrait De Parfum, famous star of the constellation Andromeda. The stylistic and creative principle is based on extreme research, almost acrobatic, which explores the boundaries of Andromeda and its continuous evolution. This creates an original and unique composition, built with precious and rare raw materials. Top notes of cassis fuse with heart notes of jasmine and base notes of Australian sandalwood and amber. The balance of tensions in this setting is breathtaking, like a warm breeze in a summer evening.\u003c\/p\u003e\r\u003c\/div\u003e","published_at":"2017-02-08T16:36:00-05:00","created_at":"2017-02-08T16:45:14-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","Feminine","Fragrance","Masculine","Perfume","Tiziana Terenzi","Unisex"],"price":70000,"price_min":70000,"price_max":70000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30278933128,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Assoluto Adhil 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":70000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741042492"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/adhil.jpg?v=1486590315"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/adhil.jpg?v=1486590315","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003eTiziana Terenzi‰۪s parfum collection evokes a sense of wonder, embodying the essence of re-discovery, of recognizing the dearest possessions we thought we had lost, or perhaps did not even know that we had forgotten.\r\u003cdiv class=\"the-details fragrance-detail\"\u003e\r\u003cp\u003eThe second fragrance of the Assoluto collection is Adhil Extrait De Parfum, famous star of the constellation Andromeda. The stylistic and creative principle is based on extreme research, almost acrobatic, which explores the boundaries of Andromeda and its continuous evolution. This creates an original and unique composition, built with precious and rare raw materials. Top notes of cassis fuse with heart notes of jasmine and base notes of Australian sandalwood and amber. The balance of tensions in this setting is breathtaking, like a warm breeze in a summer evening.\u003c\/p\u003e\r\u003c\/div\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Tyl
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8659815496" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 508px;"><div class="owl-item active" style="width: 508px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/tyl_grande.jpg?v=1486590637" class="img-responsive owl-lazy" alt="Assoluto Tyl 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/tyl_grande.jpg?v=1486590637" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/assoluto-tyl-100-ml-extrait-de-parfum-by-tiziana-terenzi" title="Assoluto Tyl 100 ml Extrait De Parfum by Tiziana Terenzi">Assoluto Tyl 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$700.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Tiziana Terenzi‰۪s parfum collection evokes a sense of wonder, embodying the essence of re-discovery, of recognizing the dearest possessions we thought we had lost, or perhaps did not even know that we had forgotten.</p>
+<p>Assoluto Tyl Extrait De Parfum, rising star of the constellation Draco reaches a border never before explored, realising a unique and totally new fragrance. The precious scents of musk emphasise and reverberate the notes of golden amber, sparkling made by citrus fruits, but sweetly balanced by the grace of flowers and by the generosity of vanilla. A stellar symphony able to lightly glide over the body like a gentle caress, and to lull the soul of the child that is in us!</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8659815496" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30279324424">
+                    Default Title - $700.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8659815496", {"id":8659815496,"title":"Assoluto Tyl 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"assoluto-tyl-100-ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\r\u003cp\u003eTiziana Terenzi‰۪s parfum collection evokes a sense of wonder, embodying the essence of re-discovery, of recognizing the dearest possessions we thought we had lost, or perhaps did not even know that we had forgotten.\u003c\/p\u003e\r\u003cp\u003eAssoluto Tyl Extrait De Parfum, rising star of the constellation Draco reaches a border never before explored, realising a unique and totally new fragrance. The precious scents of musk emphasise and reverberate the notes of golden amber, sparkling made by citrus fruits, but sweetly balanced by the grace of flowers and by the generosity of vanilla. A stellar symphony able to lightly glide over the body like a gentle caress, and to lull the soul of the child that is in us!\u003c\/p\u003e","published_at":"2017-02-08T16:48:00-05:00","created_at":"2017-02-08T16:50:35-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Feminine","Fragrance","Masculine","Perfume","Tiziana Terenzi","Unisex"],"price":70000,"price_min":70000,"price_max":70000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30279324424,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Assoluto Tyl 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":70000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741052491"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/tyl.jpg?v=1486590637"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/tyl.jpg?v=1486590637","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\r\u003cp\u003eTiziana Terenzi‰۪s parfum collection evokes a sense of wonder, embodying the essence of re-discovery, of recognizing the dearest possessions we thought we had lost, or perhaps did not even know that we had forgotten.\u003c\/p\u003e\r\u003cp\u003eAssoluto Tyl Extrait De Parfum, rising star of the constellation Draco reaches a border never before explored, realising a unique and totally new fragrance. The precious scents of musk emphasise and reverberate the notes of golden amber, sparkling made by citrus fruits, but sweetly balanced by the grace of flowers and by the generosity of vanilla. A stellar symphony able to lightly glide over the body like a gentle caress, and to lull the soul of the child that is in us!\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Saiph
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8659943560" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 508px;"><div class="owl-item active" style="width: 508px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/saiph_grande.jpg?v=1486592346" class="img-responsive owl-lazy" alt="Luna Attar Saiph 15 ml by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/saiph_grande.jpg?v=1486592346" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/luna-attar-saiph-15-ml-by-tiziana-terenzi" title="Luna Attar Saiph 15 ml by Tiziana Terenzi">Luna Attar Saiph 15 ml by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$675.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>Tiziana Terenzi’s Luna Attar Saiph Eau de Parfum was born from a journey of exploration, which the mind accomplishes through memories that come together in the childish dream of a fairy country. This nectar is an explosion of colours on the screen of imagination, an access to the glare of the dream. A scent that you do not expect, and which surprises you from the first moment. A citrus bouquet lying on a bed of rose petals, supported by the effervescence of oxygen. Sweet and deep counterpoints of lovable fruit are chasing each other, expertly held up by precious woods and by the warm embrace of vanilla, amber and musk.</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8659943560" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30281022472">
+                    Default Title - $675.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8659943560", {"id":8659943560,"title":"Luna Attar Saiph 15 ml by Tiziana Terenzi","handle":"luna-attar-saiph-15-ml-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eTiziana Terenzi’s Luna Attar Saiph Eau de Parfum was born from a journey of exploration, which the mind accomplishes through memories that come together in the childish dream of a fairy country. This nectar is an explosion of colours on the screen of imagination, an access to the glare of the dream. A scent that you do not expect, and which surprises you from the first moment. A citrus bouquet lying on a bed of rose petals, supported by the effervescence of oxygen. Sweet and deep counterpoints of lovable fruit are chasing each other, expertly held up by precious woods and by the warm embrace of vanilla, amber and musk.\u003c\/span\u003e","published_at":"2017-02-08T16:51:00-05:00","created_at":"2017-02-08T17:19:05-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":67500,"price_min":67500,"price_max":67500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30281022472,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Luna Attar Saiph 15 ml by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":67500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741022494"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/saiph.jpg?v=1486592346"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/saiph.jpg?v=1486592346","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eTiziana Terenzi’s Luna Attar Saiph Eau de Parfum was born from a journey of exploration, which the mind accomplishes through memories that come together in the childish dream of a fairy country. This nectar is an explosion of colours on the screen of imagination, an access to the glare of the dream. A scent that you do not expect, and which surprises you from the first moment. A citrus bouquet lying on a bed of rose petals, supported by the effervescence of oxygen. Sweet and deep counterpoints of lovable fruit are chasing each other, expertly held up by precious woods and by the warm embrace of vanilla, amber and musk.\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+
+{% comment %}
+        Below is modal content for Tabit
+{% endcomment %}
+
+
+<div class="modal quick-view" id="productQuickView-8659950600" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 508px;"><div class="owl-item active" style="width: 508px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/tabit_grande.jpg?v=1486592442" class="img-responsive owl-lazy" alt="Luna Attar Tabit 15 ml by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/tabit_grande.jpg?v=1486592442" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/luna-attar-tabit-15-ml-by-tiziana-terenzi" title="Luna Attar Tabit 15 ml by Tiziana Terenzi">Luna Attar Tabit 15 ml by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$675.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Tiziana and Paolo Terenzi worked tirelessly to create a stunning perfume nectar with a unique and velvety honey texture, different from any other product that can be found in the world. This nectar of pure essence brings us back to very ancient and heavenly origins of perfume. It must be used by skilled hands, and only by a deep connoisseur of beauty.</p>
+<p>Tabit is a creation that conquers you from the first moment, and it will not abandon you. The scent is powerful but gentle, like the caress of a child smiling. Yet, it is provocative and sensual like a bewitching look, which you cannot resist. Its top notes are sparkling and immediately playful, counterpoints of citrus and green leaves; fresh and radiant they recline on the warm sweetness of the coconut and fisheries. The impetus of joy explodes with all its beauty on the base notes of this attar, never far from its heart, royal and gentle.</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8659950600" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30281128840">
+                    Default Title - $675.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8659950600", {"id":8659950600,"title":"Luna Attar Tabit 15 ml by Tiziana Terenzi","handle":"luna-attar-tabit-15-ml-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eTiziana and Paolo Terenzi worked tirelessly to create a stunning perfume nectar with a unique and velvety honey texture, different from any other product that can be found in the world. This nectar of pure essence brings us back to very ancient and heavenly origins of perfume. It must be used by skilled hands, and only by a deep connoisseur of beauty.\u003c\/p\u003e\n\u003cp\u003eTabit is a creation that conquers you from the first moment, and it will not abandon you. The scent is powerful but gentle, like the caress of a child smiling. Yet, it is provocative and sensual like a bewitching look, which you cannot resist. Its top notes are sparkling and immediately playful, counterpoints of citrus and green leaves; fresh and radiant they recline on the warm sweetness of the coconut and fisheries. The impetus of joy explodes with all its beauty on the base notes of this attar, never far from its heart, royal and gentle.\u003c\/p\u003e","published_at":"2017-02-08T17:19:00-05:00","created_at":"2017-02-08T17:20:40-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["Cologne","EDP","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":67500,"price_min":67500,"price_max":67500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30281128840,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Luna Attar Tabit 15 ml by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":67500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741032493"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/tabit.jpg?v=1486592442"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/tabit.jpg?v=1486592442","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eTiziana and Paolo Terenzi worked tirelessly to create a stunning perfume nectar with a unique and velvety honey texture, different from any other product that can be found in the world. This nectar of pure essence brings us back to very ancient and heavenly origins of perfume. It must be used by skilled hands, and only by a deep connoisseur of beauty.\u003c\/p\u003e\n\u003cp\u003eTabit is a creation that conquers you from the first moment, and it will not abandon you. The scent is powerful but gentle, like the caress of a child smiling. Yet, it is provocative and sensual like a bewitching look, which you cannot resist. Its top notes are sparkling and immediately playful, counterpoints of citrus and green leaves; fresh and radiant they recline on the warm sweetness of the coconut and fisheries. The impetus of joy explodes with all its beauty on the base notes of this attar, never far from its heart, royal and gentle.\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+

@@ -1,0 +1,667 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+{% comment %}
+        Below is modal content for Godolphin
+{% endcomment %}
+<div class="modal quick-view" id="productQuickView-8657964168" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1478px;"><div class="owl-item active" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Godolphin_RE_CMYK_1000_grande.jpg?v=1489082510" class="img-responsive owl-lazy" alt="Godolphin by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/Godolphin_RE_CMYK_1000_grande.jpg?v=1489082510" style="opacity: 1;"></div></div><div class="owl-item" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/godolphin-v2_grande.png?v=1489082510" class="img-responsive owl-lazy" alt="Godolphin by Parfums de Marly"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/godolphin-by-parfums-de-marly" title="Godolphin by Parfums de Marly">Godolphin by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$200.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Godolphin Eau de Parfum, a distinguished leather unisex scent which is as regal and sophisticated as the incredible Godolphin Stallion himself.</p>
+<p>An elegant leather scent of undeniable power, the Godolphin fragrance is based around a sumptuous leather accord, equal parts rich, sweet, powdery, spicy and regal. &nbsp;This distinguished scent opens with the freshness of thyme, saffron and cypress accords contrasted by rich rose which anchors the smooth sensual heart of the fragrance combining with jasmine and buttery orris. &nbsp;The distinct leather, cedarwood and amber notes create a warm woody finish giving the fragrance and it’s wearer a powerful presence.</p>
+<p><span><strong>Size: </strong>75 ml and 125 ml</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8657964168" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30252430536">
+                    75 ml - $200.00
+                    </option>
+                  
+                    <option value="30652592456">
+                    125 ml - $290.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="75 ml" data-value="75 ml" class="btn btn-primary  swatch-element 75-ml available">
+            <input autocomplete="off" id="swatch-0-75-ml" type="radio" name="option-0" value="75 ml"> 
+        
+            
+              75 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .75-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="125 ml" data-value="125 ml" class="btn btn-primary  swatch-element 125-ml available">
+            <input autocomplete="off" id="swatch-0-125-ml" type="radio" name="option-0" value="125 ml"> 
+        
+            
+              125 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .125-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8657964168", {"id":8657964168,"title":"Godolphin by Parfums de Marly","handle":"godolphin-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eGodolphin Eau de Parfum, a distinguished leather unisex scent which is as regal and sophisticated as the incredible Godolphin Stallion himself.\u003c\/p\u003e\n\u003cp\u003eAn elegant leather scent of undeniable power, the Godolphin fragrance is based around a sumptuous leather accord, equal parts rich, sweet, powdery, spicy and regal.  This distinguished scent opens with the freshness of thyme, saffron and cypress accords contrasted by rich rose which anchors the smooth sensual heart of the fragrance combining with jasmine and buttery orris.  The distinct leather, cedarwood and amber notes create a warm woody finish giving the fragrance and it’s wearer a powerful presence.\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eSize: \u003c\/strong\u003e75 ml and 125 ml\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-08T10:58:00-05:00","created_at":"2017-02-08T10:59:27-05:00","vendor":"Parfums de Marly","type":"Cologne","tags":["Cologne","Fragrance","Men","Parfums de Marly","Unisex"],"price":20000,"price_min":20000,"price_max":29000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30252430536,"title":"75 ml","option1":"75 ml","option2":null,"option3":null,"sku":"PM0503PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Godolphin by Parfums de Marly - 75 ml","public_title":"75 ml","options":["75 ml"],"price":20000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578505125"},{"id":30652592456,"title":"125 ml","option1":"125 ml","option2":null,"option3":null,"sku":"PM0500PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Godolphin by Parfums de Marly - 125 ml","public_title":"125 ml","options":["125 ml"],"price":29000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578505002"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Godolphin_RE_CMYK_1000.jpg?v=1489082510","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/godolphin-v2.png?v=1489082510"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Godolphin_RE_CMYK_1000.jpg?v=1489082510","options":["Size"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eGodolphin Eau de Parfum, a distinguished leather unisex scent which is as regal and sophisticated as the incredible Godolphin Stallion himself.\u003c\/p\u003e\n\u003cp\u003eAn elegant leather scent of undeniable power, the Godolphin fragrance is based around a sumptuous leather accord, equal parts rich, sweet, powdery, spicy and regal.  This distinguished scent opens with the freshness of thyme, saffron and cypress accords contrasted by rich rose which anchors the smooth sensual heart of the fragrance combining with jasmine and buttery orris.  The distinct leather, cedarwood and amber notes create a warm woody finish giving the fragrance and it’s wearer a powerful presence.\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eSize: \u003c\/strong\u003e75 ml and 125 ml\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Pegasus
+{% endcomment %}
+<div class="modal quick-view" id="productQuickView-8658001544" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1478px;"><div class="owl-item active" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Pegasus_grande.jpg?v=1489089281" class="img-responsive owl-lazy" alt="Pegasus by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/Pegasus_grande.jpg?v=1489089281" style="opacity: 1;"></div></div><div class="owl-item" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/pegasus-v4_grande.png?v=1489089281" class="img-responsive owl-lazy" alt="Pegasus by Parfums de Marly"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/pegasus-by-parfums-de-marly" title="Pegasus by Parfums de Marly">Pegasus by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$200.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Pegasus Eau de Parfum, one of Parfums de Marly's most popular fragrances is pure refinement, nobility and power.</p>
+<p>A refined take on a fougere style fragrance featuring an unexpected almond note, slightly sweet, yet somewhat bitter and warm. &nbsp;Vanilla steals the show in the base of this sensational fragrance while bergamot, sandalwood and amber tame the sweetness, rendering this fragrance refined and inviting. &nbsp;One smell, and you will be swept away in its sophistication and majesty transporting you back to the XVIII century.</p>
+<p><span><strong>Sizes:</strong>&nbsp;75 ml and 125 ml</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8658001544" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30252857352">
+                    75 ml - $200.00
+                    </option>
+                  
+                    <option value="30652993544">
+                    125 ml - $290.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="75 ml" data-value="75 ml" class="btn btn-primary  swatch-element 75-ml available">
+            <input autocomplete="off" id="swatch-0-75-ml" type="radio" name="option-0" value="75 ml"> 
+        
+            
+              75 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .75-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="125 ml" data-value="125 ml" class="btn btn-primary  swatch-element 125-ml available">
+            <input autocomplete="off" id="swatch-0-125-ml" type="radio" name="option-0" value="125 ml"> 
+        
+            
+              125 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .125-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658001544", {"id":8658001544,"title":"Pegasus by Parfums de Marly","handle":"pegasus-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003ePegasus Eau de Parfum, one of Parfums de Marly's most popular fragrances is pure refinement, nobility and power.\u003c\/p\u003e\n\u003cp\u003eA refined take on a fougere style fragrance featuring an unexpected almond note, slightly sweet, yet somewhat bitter and warm.  Vanilla steals the show in the base of this sensational fragrance while bergamot, sandalwood and amber tame the sweetness, rendering this fragrance refined and inviting.  One smell, and you will be swept away in its sophistication and majesty transporting you back to the XVIII century.\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eSizes:\u003c\/strong\u003e 75 ml and 125 ml\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-08T11:04:00-05:00","created_at":"2017-02-08T11:06:30-05:00","vendor":"Parfums de Marly","type":"Fragrance","tags":["Cologne","Fragrance","Men","Parfums de Marly","Unisex"],"price":20000,"price_min":20000,"price_max":29000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30252857352,"title":"75 ml","option1":"75 ml","option2":null,"option3":null,"sku":"PM0603PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Pegasus by Parfums de Marly - 75 ml","public_title":"75 ml","options":["75 ml"],"price":20000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578506122"},{"id":30652993544,"title":"125 ml","option1":"125 ml","option2":null,"option3":null,"sku":"PM0600PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Pegasus by Parfums de Marly - 125 ml","public_title":"125 ml","options":["125 ml"],"price":29000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578506009"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Pegasus.jpg?v=1489089281","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/pegasus-v4.png?v=1489089281"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Pegasus.jpg?v=1489089281","options":["Size"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003ePegasus Eau de Parfum, one of Parfums de Marly's most popular fragrances is pure refinement, nobility and power.\u003c\/p\u003e\n\u003cp\u003eA refined take on a fougere style fragrance featuring an unexpected almond note, slightly sweet, yet somewhat bitter and warm.  Vanilla steals the show in the base of this sensational fragrance while bergamot, sandalwood and amber tame the sweetness, rendering this fragrance refined and inviting.  One smell, and you will be swept away in its sophistication and majesty transporting you back to the XVIII century.\u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eSizes:\u003c\/strong\u003e 75 ml and 125 ml\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Herod
+{% endcomment %}
+
+ <div class="modal quick-view" id="productQuickView-8658014152" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded owl-hidden">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 200px;"><div class="owl-item active" style="width: 100px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Herod_CMYK_RE_1000_grande.jpg?v=1489087079" class="img-responsive owl-lazy" alt="Herod by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/Herod_CMYK_RE_1000_grande.jpg?v=1489087079" style="opacity: 1;"></div></div><div class="owl-item" style="width: 100px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/herod-v3_grande.png?v=1489087079" class="img-responsive owl-lazy" alt="Herod by Parfums de Marly"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/herod-by-parfums-de-marly" title="Herod by Parfums de Marly">Herod by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$200.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Deep, smoky and woody. Herod Eau de Parfum is a spectacular fragrance which exudes pure royalty.&nbsp;</p>
+<p>Herod is a luxurious and sexy fragrance which makes a stunning statement with a spicy mix of cinnamon and peppercorns, followed by the sultry warmth of incense and tobacco. &nbsp;Rich patchouli and vetiver enhance the woody and earthy aspects of this scent; while creamy, delicious vanilla enhances the addictive quality, leaving you wanting more. &nbsp;</p>
+<p><span><strong>Sizes:</strong>&nbsp;75 ml and 125 ml</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class="">
+                  <select id="product-select-8658014152" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30253073736">
+                    75 ml - $200.00
+                    </option>
+                  
+                    <option value="30652657480">
+                    125 ml - $290.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                
+                  
+                    
+
+
+
+
+
+
+
+
+  
+    
+    
+    <style>
+      label[for="product-select-option-0"] { display: none; }
+      #product-select-option-0 { display: none; }
+      #product-select-option-0 + .custom-style-select-box { display: none !important; }
+    </style>
+    <script>$(window).load(function() { $('.selector-wrapper:eq(0)').hide(); });</script>
+
+    
+    
+
+  
+
+
+
+<div class="swatch clearfix" data-option-index="0">
+  <label class="swatch-title">Size</label>
+
+    <div class="btn-group" data-toggle="buttons">
+      
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="75 ml" data-value="75 ml" class="btn btn-primary  swatch-element 75-ml available">
+            <input autocomplete="off" id="swatch-0-75-ml" type="radio" name="option-0" value="75 ml"> 
+        
+            
+              75 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .75-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+
+        
+        
+          
+           
+          
+          
+
+           
+          
+
+          <label title="125 ml" data-value="125 ml" class="btn btn-primary  swatch-element 125-ml available">
+            <input autocomplete="off" id="swatch-0-125-ml" type="radio" name="option-0" value="125 ml"> 
+        
+            
+              125 ml  
+            
+            
+          </label>
+        
+        
+          <script>
+            jQuery('.swatch[data-option-index="0"] .125-ml').removeClass('soldout').addClass('available').find(':radio').removeAttr('disabled');
+          </script>
+        
+      
+    </div>
+
+</div>
+
+
+                  
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658014152", {"id":8658014152,"title":"Herod by Parfums de Marly","handle":"herod-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eDeep, smoky and woody. Herod Eau de Parfum is a spectacular fragrance which exudes pure royalty. \u003c\/p\u003e\n\u003cp\u003eHerod is a luxurious and sexy fragrance which makes a stunning statement with a spicy mix of cinnamon and peppercorns, followed by the sultry warmth of incense and tobacco.  Rich patchouli and vetiver enhance the woody and earthy aspects of this scent; while creamy, delicious vanilla enhances the addictive quality, leaving you wanting more.  \u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eSizes:\u003c\/strong\u003e 75 ml and 125 ml\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-08T11:07:00-05:00","created_at":"2017-02-08T11:09:51-05:00","vendor":"Parfums de Marly","type":"Cologne","tags":["Cologne","Fragrance","Men","Parfums de Marly","Unisex"],"price":20000,"price_min":20000,"price_max":29000,"available":true,"price_varies":true,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30253073736,"title":"75 ml","option1":"75 ml","option2":null,"option3":null,"sku":"PM0703PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Herod by Parfums de Marly - 75 ml","public_title":"75 ml","options":["75 ml"],"price":20000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578507129"},{"id":30652657480,"title":"125 ml","option1":"125 ml","option2":null,"option3":null,"sku":"PM0700PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Herod by Parfums de Marly - 125 ml","public_title":"125 ml","options":["125 ml"],"price":29000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578507006"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Herod_CMYK_RE_1000.jpg?v=1489087079","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/herod-v3.png?v=1489087079"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Herod_CMYK_RE_1000.jpg?v=1489087079","options":["Size"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eDeep, smoky and woody. Herod Eau de Parfum is a spectacular fragrance which exudes pure royalty. \u003c\/p\u003e\n\u003cp\u003eHerod is a luxurious and sexy fragrance which makes a stunning statement with a spicy mix of cinnamon and peppercorns, followed by the sultry warmth of incense and tobacco.  Rich patchouli and vetiver enhance the woody and earthy aspects of this scent; while creamy, delicious vanilla enhances the addictive quality, leaving you wanting more.  \u003c\/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong\u003eSizes:\u003c\/strong\u003e 75 ml and 125 ml\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>

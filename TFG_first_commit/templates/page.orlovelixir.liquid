@@ -1,0 +1,275 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- MODALS -->
+
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+<iframe src="/17658667/digital_wallets/dialog" scrolling="no" style="position: fixed; top: 40px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe>
+
+
+<!-- MODALS -->
+
+
+{% comment %}
+        Below is modal content for Orlov Elixir
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8666876552" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 998px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/426Orlov_1_grande.jpg?v=1487627984" class="img-responsive owl-lazy" alt="Orlov 75 ml Elixir Edition by Orlov Paris" src="//cdn.shopify.com/s/files/1/1765/8667/products/426Orlov_1_grande.jpg?v=1487627984" style="opacity: 1;"></div></div><div class="owl-item" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/elixir-orlov-03_grande.jpg?v=1487627984" class="img-responsive owl-lazy" alt="Orlov 75 ml Elixir Edition by Orlov Paris"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/orlov-75-ml-elixir-edition-by-orlov-paris" title="Orlov 75 ml Elixir Edition by Orlov Paris">Orlov 75 ml Elixir Edition by Orlov Paris</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$330.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p><span>The premium version of Orlov Paris’ signature fragrance is not only more highly concentrated: its formula is also richer, headier and spicier. </span><em>Orlov</em><span>’s radiant white flower – a stylized blend of tuberose, orange blossom and jasmine set in iris – takes on a more sensuous Oriental hue with added vanilla and amber.</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666876552" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30338448904">
+                    Default Title - $330.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666876552", {"id":8666876552,"title":"Orlov 75 ml Elixir Edition by Orlov Paris","handle":"orlov-75-ml-elixir-edition-by-orlov-paris","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eThe premium version of Orlov Paris’ signature fragrance is not only more highly concentrated: its formula is also richer, headier and spicier. \u003c\/span\u003e\u003cem\u003eOrlov\u003c\/em\u003e\u003cspan\u003e’s radiant white flower – a stylized blend of tuberose, orange blossom and jasmine set in iris – takes on a more sensuous Oriental hue with added vanilla and amber.\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-09T15:04:00-05:00","created_at":"2017-02-09T15:06:53-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Fragrance","Orlov","Orlov Paris","Perfume","Women"],"price":33000,"price_min":33000,"price_max":33000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30338448904,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5507","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Orlov 75 ml Elixir Edition by Orlov Paris","public_title":null,"options":["Default Title"],"price":33000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006077"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/426Orlov_1.jpg?v=1487627984","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/elixir-orlov-03.jpg?v=1487627984"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/426Orlov_1.jpg?v=1487627984","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eThe premium version of Orlov Paris’ signature fragrance is not only more highly concentrated: its formula is also richer, headier and spicier. \u003c\/span\u003e\u003cem\u003eOrlov\u003c\/em\u003e\u003cspan\u003e’s radiant white flower – a stylized blend of tuberose, orange blossom and jasmine set in iris – takes on a more sensuous Oriental hue with added vanilla and amber.\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Star of the Season Elixir
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8666972552" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 499px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/1_web_2_grande.jpg?v=1487627863" class="img-responsive owl-lazy" alt="Star of the Season Elixir Edition by Orlov Paris" src="//cdn.shopify.com/s/files/1/1765/8667/products/1_web_2_grande.jpg?v=1487627863" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/star-of-the-season-elixir-edition-by-orlov-paris" title="Star of the Season Elixir Edition by Orlov Paris">Star of the Season Elixir Edition by Orlov Paris</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$330.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>This internally flawless, 100.10-carat pear-shaped stone first appeared in 1995 at a Sotheby’s auction in Geneva. After a round of intense, swiftly escalating bids, it was won by the prominent Saudi jeweler, diamond collector and connoisseur Sheik Ahmed Hassan Fitaihi for a record sum of $16,500,000. At the time, this was the highest price fetched by a diamond in a public auction.</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666972552" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30338894792">
+                    Default Title - $330.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666972552", {"id":8666972552,"title":"Star of the Season Elixir Edition by Orlov Paris","handle":"star-of-the-season-elixir-edition-by-orlov-paris","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eThis internally flawless, 100.10-carat pear-shaped stone first appeared in 1995 at a Sotheby’s auction in Geneva. After a round of intense, swiftly escalating bids, it was won by the prominent Saudi jeweler, diamond collector and connoisseur Sheik Ahmed Hassan Fitaihi for a record sum of $16,500,000. At the time, this was the highest price fetched by a diamond in a public auction.\u003c\/span\u003e","published_at":"2017-02-09T15:11:00-05:00","created_at":"2017-02-09T15:13:50-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Fragrance","Orlov","Orlov Paris","Perfume","Women"],"price":33000,"price_min":33000,"price_max":33000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30338894792,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5508","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Star of the Season Elixir Edition by Orlov Paris","public_title":null,"options":["Default Title"],"price":33000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006084"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/1_web_2.jpg?v=1487627863"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/1_web_2.jpg?v=1487627863","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eThis internally flawless, 100.10-carat pear-shaped stone first appeared in 1995 at a Sotheby’s auction in Geneva. After a round of intense, swiftly escalating bids, it was won by the prominent Saudi jeweler, diamond collector and connoisseur Sheik Ahmed Hassan Fitaihi for a record sum of $16,500,000. At the time, this was the highest price fetched by a diamond in a public auction.\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+

@@ -1,0 +1,494 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+{% comment %}
+        Below is modal content for Darley
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8651765640" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1478px;"><div class="owl-item active" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Darley_grande.jpg?v=1489088479" class="img-responsive owl-lazy" alt="Darley by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/Darley_grande.jpg?v=1489088479" style="opacity: 1;"></div></div><div class="owl-item" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/darley-v2_grande.png?v=1489088479" class="img-responsive owl-lazy" alt="Darley by Parfums de Marly"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/darley-by-parfums-de-marly" title="Darley by Parfums de Marly">Darley by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$275.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Darley Eau de Parfum, a remarkably valiant fragrance, stays true to the exotic and nobel Darley Arabian horse.&nbsp;</p>
+<p>A fresh fougere with a soft floral heart and spicy oriental base, the Darley fragrance opens with a crisp burst of lemon and bergamot, made unique with a delightfully fresh mint note. The heart of the fragrance sings of royalty with a luscious rose, rounded out with orange blossom and classic lavender, finished with a kick of savory rosemary and fiery cinnamon. A spicy patchouli winds around sandalwood and tonka for an intense but smoothly sophisticated dry down that lingers for hours.</p>
+<p><b>Size: </b>125 ml</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8651765640" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30188970184">
+                    Default Title - $275.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8651765640", {"id":8651765640,"title":"Darley by Parfums de Marly","handle":"darley-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eDarley Eau de Parfum, a remarkably valiant fragrance, stays true to the exotic and nobel Darley Arabian horse. \u003c\/p\u003e\n\u003cp\u003eA fresh fougere with a soft floral heart and spicy oriental base, the Darley fragrance opens with a crisp burst of lemon and bergamot, made unique with a delightfully fresh mint note. The heart of the fragrance sings of royalty with a luscious rose, rounded out with orange blossom and classic lavender, finished with a kick of savory rosemary and fiery cinnamon. A spicy patchouli winds around sandalwood and tonka for an intense but smoothly sophisticated dry down that lingers for hours.\u003c\/p\u003e\n\u003cp\u003e\u003cb\u003eSize: \u003c\/b\u003e125 ml\u003c\/p\u003e","published_at":"2017-02-07T17:36:00-05:00","created_at":"2017-02-07T17:45:53-05:00","vendor":"Parfums de Marly","type":"Cologne","tags":["Cologne","Darley","Fragrance","Men","Parfums de Marly","Unisex"],"price":27500,"price_min":27500,"price_max":27500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30188970184,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"PM0100PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Darley by Parfums de Marly","public_title":null,"options":["Default Title"],"price":27500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578501004"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Darley.jpg?v=1489088479","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/darley-v2.png?v=1489088479"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Darley.jpg?v=1489088479","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eDarley Eau de Parfum, a remarkably valiant fragrance, stays true to the exotic and nobel Darley Arabian horse. \u003c\/p\u003e\n\u003cp\u003eA fresh fougere with a soft floral heart and spicy oriental base, the Darley fragrance opens with a crisp burst of lemon and bergamot, made unique with a delightfully fresh mint note. The heart of the fragrance sings of royalty with a luscious rose, rounded out with orange blossom and classic lavender, finished with a kick of savory rosemary and fiery cinnamon. A spicy patchouli winds around sandalwood and tonka for an intense but smoothly sophisticated dry down that lingers for hours.\u003c\/p\u003e\n\u003cp\u003e\u003cb\u003eSize: \u003c\/b\u003e125 ml\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Shagya
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8651810632" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1478px;"><div class="owl-item active" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Shagya_grande.jpg?v=1489089454" class="img-responsive owl-lazy" alt="Shagya by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/Shagya_grande.jpg?v=1489089454" style="opacity: 1;"></div></div><div class="owl-item" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/shagya-v2_grande.png?v=1489089454" class="img-responsive owl-lazy" alt="Shagya by Parfums de Marly"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/shagya-by-parfums-de-marly" title="Shagya by Parfums de Marly">Shagya by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$275.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p><span>Shagya, Eau de Parfum, a rich oud, is the most exclusive of the Parfums de Marly Classic Collection.</span></p>
+<p>Shagya is a rich oud scent that masterfully combines bright citrus and soft woods for a delightfully refined fragrance that is designed for men but perfect for all.<br>The fragrance opens with a tangy lime and juicy bergamot which lends to the ease of this sophisticated oud fragrance. Cedarwood enhances the relaxed nature of this scent, while a beautiful vetiver adds spice and a touch of energy.</p>
+<meta charset="utf-8">
+<p><span><b>Size: </b>125 ml</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8651810632" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30189529544">
+                    Default Title - $275.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8651810632", {"id":8651810632,"title":"Shagya by Parfums de Marly","handle":"shagya-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eShagya, Eau de Parfum, a rich oud, is the most exclusive of the Parfums de Marly Classic Collection.\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003eShagya is a rich oud scent that masterfully combines bright citrus and soft woods for a delightfully refined fragrance that is designed for men but perfect for all.\u003cbr\u003eThe fragrance opens with a tangy lime and juicy bergamot which lends to the ease of this sophisticated oud fragrance. Cedarwood enhances the relaxed nature of this scent, while a beautiful vetiver adds spice and a touch of energy.\u003c\/p\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003e\u003cb\u003eSize: \u003c\/b\u003e125 ml\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-07T17:49:00-05:00","created_at":"2017-02-07T17:56:46-05:00","vendor":"Parfums de Marly","type":"Cologne","tags":["Cologne","Fragrance","Men","Parfums de Marly","Shagya","Unisex"],"price":27500,"price_min":27500,"price_max":27500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30189529544,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"PM0200PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Shagya by Parfums de Marly","public_title":null,"options":["Default Title"],"price":27500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578502001"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Shagya.jpg?v=1489089454","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/shagya-v2.png?v=1489089454"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Shagya.jpg?v=1489089454","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003eShagya, Eau de Parfum, a rich oud, is the most exclusive of the Parfums de Marly Classic Collection.\u003c\/span\u003e\u003c\/p\u003e\n\u003cp\u003eShagya is a rich oud scent that masterfully combines bright citrus and soft woods for a delightfully refined fragrance that is designed for men but perfect for all.\u003cbr\u003eThe fragrance opens with a tangy lime and juicy bergamot which lends to the ease of this sophisticated oud fragrance. Cedarwood enhances the relaxed nature of this scent, while a beautiful vetiver adds spice and a touch of energy.\u003c\/p\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003e\u003cb\u003eSize: \u003c\/b\u003e125 ml\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Ispazon
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8651846664" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1478px;"><div class="owl-item active" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Ispazon_RE_CMYK_grande.jpg?v=1489087754" class="img-responsive owl-lazy" alt="Ispazon by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/Ispazon_RE_CMYK_grande.jpg?v=1489087754" style="opacity: 1;"></div></div><div class="owl-item" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/ispazon-v2_grande.png?v=1489087754" class="img-responsive owl-lazy" alt="Ispazon by Parfums de Marly"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/ispazon-by-parfums-de-marly" title="Ispazon by Parfums de Marly">Ispazon by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$275.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Ispazon, Eau de Parfum, a fresh, dynamic woody oriental fragrance is for anyone with a bold and adventurous spirit.</p>
+<p>Ispazon, Eau de Parfum, a fresh, dynamic woody oriental fragrance is for anyone with a bold and adventurous spirit. &nbsp;An adventurous fragrance that tantalizes your olfactory senses, Ispazon opens with a crisp blend of citruses and a distinct Laurel note. The masculine signature emerges in the heart of this fragrance with a spicy, wooded, cedar enhanced with clean green notes adding a vibrancy and energy. &nbsp;The sexiness of this fragrance is enhanced in the dry down with woody notes which are reinforced with warm amber and vanilla musk.</p>
+<meta charset="utf-8">
+<p><span><b>Size : </b>125 ml</span></p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8651846664" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30189929992">
+                    Default Title - $275.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8651846664", {"id":8651846664,"title":"Ispazon by Parfums de Marly","handle":"ispazon-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eIspazon, Eau de Parfum, a fresh, dynamic woody oriental fragrance is for anyone with a bold and adventurous spirit.\u003c\/p\u003e\n\u003cp\u003eIspazon, Eau de Parfum, a fresh, dynamic woody oriental fragrance is for anyone with a bold and adventurous spirit.  An adventurous fragrance that tantalizes your olfactory senses, Ispazon opens with a crisp blend of citruses and a distinct Laurel note. The masculine signature emerges in the heart of this fragrance with a spicy, wooded, cedar enhanced with clean green notes adding a vibrancy and energy.  The sexiness of this fragrance is enhanced in the dry down with woody notes which are reinforced with warm amber and vanilla musk.\u003c\/p\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003e\u003cb\u003eSize : \u003c\/b\u003e125 ml\u003c\/span\u003e\u003c\/p\u003e","published_at":"2017-02-07T18:09:00-05:00","created_at":"2017-02-07T18:11:05-05:00","vendor":"Parfums de Marly","type":"Cologne","tags":["Cologne","Fragrance","Ispazon","Men","Parfums de Marly","Unisex"],"price":27500,"price_min":27500,"price_max":27500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30189929992,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"PM0300PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Ispazon by Parfums de Marly","public_title":null,"options":["Default Title"],"price":27500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578503008"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Ispazon_RE_CMYK.jpg?v=1489087754","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/ispazon-v2.png?v=1489087754"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Ispazon_RE_CMYK.jpg?v=1489087754","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eIspazon, Eau de Parfum, a fresh, dynamic woody oriental fragrance is for anyone with a bold and adventurous spirit.\u003c\/p\u003e\n\u003cp\u003eIspazon, Eau de Parfum, a fresh, dynamic woody oriental fragrance is for anyone with a bold and adventurous spirit.  An adventurous fragrance that tantalizes your olfactory senses, Ispazon opens with a crisp blend of citruses and a distinct Laurel note. The masculine signature emerges in the heart of this fragrance with a spicy, wooded, cedar enhanced with clean green notes adding a vibrancy and energy.  The sexiness of this fragrance is enhanced in the dry down with woody notes which are reinforced with warm amber and vanilla musk.\u003c\/p\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003e\u003cspan\u003e\u003cb\u003eSize : \u003c\/b\u003e125 ml\u003c\/span\u003e\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+
+{% comment %}
+        Below is modal content for Lippizan
+{% endcomment %}
+<div class="modal quick-view" id="productQuickView-8651861320" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 739px;"><div class="owl-item active" style="width: 739px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/lippizan_grande.jpg?v=1486509736" class="img-responsive owl-lazy" alt="Lippizan by Parfums de Marly" src="//cdn.shopify.com/s/files/1/1765/8667/products/lippizan_grande.jpg?v=1486509736" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/parfums-de-marly-collection/products/lippizan-by-parfums-de-marly" title="Lippizan by Parfums de Marly">Lippizan by Parfums de Marly</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Parfums%20de%20Marly" title="">Parfums de Marly</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$275.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<div class="form-group">
+<p>Lippizan, Eau de Parfum, a captivating woody and defiantly unisex fragrance.</p>
+<p>Regal, refined and ravishing, Lippizan is a fragrance for those who appreciate true grace and beauty. The fragrance opens with a fresh, outdoorsy burst of juicy citrus and wild, aromatic herbs. The beautiful floral heart of rose, jasmine and iris create a full bouquet with a touch of vetiver adding depth. The rich base of musky leather balances the floral bouquet making this fragrance defiantly unisex.</p>
+</div>
+<div class="form-group">
+<div class="productheader"><strong></strong></div>
+<p data-type="notes"><strong>Size:</strong> 125 ml</p>
+</div></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8651861320" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30190090312">
+                    Default Title - $275.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8651861320", {"id":8651861320,"title":"Lippizan by Parfums de Marly","handle":"lippizan-by-parfums-de-marly","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cdiv class=\"form-group\"\u003e\n\u003cp\u003eLippizan, Eau de Parfum, a captivating woody and defiantly unisex fragrance.\u003c\/p\u003e\n\u003cp\u003eRegal, refined and ravishing, Lippizan is a fragrance for those who appreciate true grace and beauty. The fragrance opens with a fresh, outdoorsy burst of juicy citrus and wild, aromatic herbs. The beautiful floral heart of rose, jasmine and iris create a full bouquet with a touch of vetiver adding depth. The rich base of musky leather balances the floral bouquet making this fragrance defiantly unisex.\u003c\/p\u003e\n\u003c\/div\u003e\n\u003cdiv class=\"form-group\"\u003e\n\u003cdiv class=\"productheader\"\u003e\u003cstrong\u003e\u003c\/strong\u003e\u003c\/div\u003e\n\u003cp data-type=\"notes\"\u003e\u003cstrong\u003eSize:\u003c\/strong\u003e 125 ml\u003c\/p\u003e\n\u003c\/div\u003e","published_at":"2017-02-07T18:15:00-05:00","created_at":"2017-02-07T18:22:04-05:00","vendor":"Parfums de Marly","type":"Cologne","tags":["Cologne","Fragrance","Lippizan","Men","Parfums de Marly","Unisex"],"price":27500,"price_min":27500,"price_max":27500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30190090312,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"PM0400PV","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Lippizan by Parfums de Marly","public_title":null,"options":["Default Title"],"price":27500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"3700578504005"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/lippizan.jpg?v=1486509736"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/lippizan.jpg?v=1486509736","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cdiv class=\"form-group\"\u003e\n\u003cp\u003eLippizan, Eau de Parfum, a captivating woody and defiantly unisex fragrance.\u003c\/p\u003e\n\u003cp\u003eRegal, refined and ravishing, Lippizan is a fragrance for those who appreciate true grace and beauty. The fragrance opens with a fresh, outdoorsy burst of juicy citrus and wild, aromatic herbs. The beautiful floral heart of rose, jasmine and iris create a full bouquet with a touch of vetiver adding depth. The rich base of musky leather balances the floral bouquet making this fragrance defiantly unisex.\u003c\/p\u003e\n\u003c\/div\u003e\n\u003cdiv class=\"form-group\"\u003e\n\u003cdiv class=\"productheader\"\u003e\u003cstrong\u003e\u003c\/strong\u003e\u003c\/div\u003e\n\u003cp data-type=\"notes\"\u003e\u003cstrong\u003eSize:\u003c\/strong\u003e 125 ml\u003c\/p\u003e\n\u003c\/div\u003e"} );
+    });
+  });
+
+  </script>
+</div>

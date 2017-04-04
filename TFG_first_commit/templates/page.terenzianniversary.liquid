@@ -1,0 +1,586 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- MODALS -->
+
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+<iframe src="/17658667/digital_wallets/dialog" scrolling="no" style="position: fixed; top: 40px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe>
+
+
+<!-- MODALS -->
+
+
+{% comment %}
+        Below is modal content for Chimaera
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8658361096" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1582px;"><div class="owl-item active" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/chimaera_grande.jpeg?v=1486574600" class="img-responsive owl-lazy" alt="Chimaera 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/chimaera_grande.jpeg?v=1486574600" style="opacity: 1;"></div></div><div class="owl-item" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/chimaera2_grande.jpeg?v=1486574802" class="img-responsive owl-lazy" alt="Chimaera 100 ml Extrait De Parfum by Tiziana Terenzi"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/chimaera-100ml-extrait-de-parfum-by-tiziana-terenzi" title="Chimaera 100 ml Extrait De Parfum by Tiziana Terenzi">Chimaera 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$340.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>As part of Terenzi's Anniversary collection, Chimaera is produced in a small batch every year- handcrafted only using the rarest raw materials. Each precious bottle is marked with the year of production, like a precious wine.</span><br><br><span>A very complex, smoky and spicy scent. Rich amber intertwines with rare woody balms and a leathery, seductive incense. One of the key ingredients is a very rare incense that is found only in Antalya, Turkey, where the mythological Mt Chimaera is.</span><br><br><span><strong>Notes:</strong> Caramel, Saffron, Carnation, Black Magnolia, Agarwood, Patchouli</span><br><span>3.4 fl oz/100ml Extrait De Parfum encased in a luxury box</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8658361096" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30258315208">
+                    Default Title - $340.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658361096", {"id":8658361096,"title":"Chimaera 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"chimaera-100ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Terenzi‰۪s Anniversary collection, Chimaera is produced in a small batch every year- handcrafted only using the rarest raw materials. Each precious bottle is marked with the year of production, like a precious wine.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eA very complex, smoky and spicy scent. Rich amber intertwines with rare woody balms and a leathery, seductive incense. One of the key ingredients is a very rare incense that is found only in Antalya, Turkey, where the mythological Mt Chimaera is.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Caramel, Saffron, Carnation, Black Magnolia, Agarwood, Patchouli\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box\u003c\/span\u003e","published_at":"2017-02-08T11:54:00-05:00","created_at":"2017-02-08T12:22:33-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["2016","Cologne","EDP","Feminine","Fragrance","Masculine","Perfume","Tiziana Terenzi","Unisex"],"price":34000,"price_min":34000,"price_max":34000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30258315208,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Chimaera 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":34000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741212383"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/chimaera.jpeg?v=1486574600","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/chimaera2.jpeg?v=1486574802"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/chimaera.jpeg?v=1486574600","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Terenzi‰۪s Anniversary collection, Chimaera is produced in a small batch every year- handcrafted only using the rarest raw materials. Each precious bottle is marked with the year of production, like a precious wine.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eA very complex, smoky and spicy scent. Rich amber intertwines with rare woody balms and a leathery, seductive incense. One of the key ingredients is a very rare incense that is found only in Antalya, Turkey, where the mythological Mt Chimaera is.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Caramel, Saffron, Carnation, Black Magnolia, Agarwood, Patchouli\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Casanova 2014
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8651553864" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1582px;"><div class="owl-item active" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/casanova_chiusa_grande.jpg?v=1486506113" class="img-responsive owl-lazy" alt="2014 Anniversary Collection 100 ml Extrait de Parfum Casanova" src="//cdn.shopify.com/s/files/1/1765/8667/products/casanova_chiusa_grande.jpg?v=1486506113" style="opacity: 1;"></div></div><div class="owl-item" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/casanova_inscatola_ok_grande.jpg?v=1486506113" class="img-responsive owl-lazy" alt="2014 Anniversary Collection 100 ml Extrait de Parfum Casanova"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/2014-anniversary-collection-extrait-de-parfum-casanova" title="2014 Anniversary Collection 100 ml Extrait de Parfum Casanova">2014 Anniversary Collection 100 ml Extrait de Parfum Casanova</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$340.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>The Anniversary Collection stems from the oldest perfume tradition. An innovative stylistic challenge that wishes to give perfume its original scent. The selection of high quality and rare raw materials only allow a limited annual production. Each precious bottle is catalogued with the year of production. The recipe itself remains the same although, each year, it gets the sublime touch of nature. For this reason, each bottle will be a unique and collectible piece.</p>
+<p><b>Size : </b>100 ml</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8651553864" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30187518728">
+                    Default Title - $340.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8651553864", {"id":8651553864,"title":"2014 Anniversary Collection 100 ml Extrait de Parfum Casanova","handle":"2014-anniversary-collection-extrait-de-parfum-casanova","description":"\u003cmeta charset=\"utf-8\"\u003e\r\u003cp\u003eThe Anniversary Collection stems from the oldest perfume tradition. An innovative stylistic challenge that wishes to give perfume its original scent. The selection of high quality and rare raw materials only allow a limited annual production. Each precious bottle is catalogued with the year of production. The recipe itself remains the same although, each year, it gets the sublime touch of nature. For this reason, each bottle will be a unique and collectible piece.\u003c\/p\u003e\r\u003cp\u003e\u003cb\u003eSize : \u003c\/b\u003e100 ml\u003c\/p\u003e","published_at":"2017-02-07T17:14:00-05:00","created_at":"2017-02-07T17:14:38-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["2014","Anniversary Collection","Casanova","Feminine","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex"],"price":34000,"price_min":34000,"price_max":34000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30187518728,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"2014 Anniversary Collection 100 ml Extrait de Parfum Casanova","public_title":null,"options":["Default Title"],"price":34000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741222382"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/casanova_chiusa.jpg?v=1486506113","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/casanova_inscatola_ok.jpg?v=1486506113"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/casanova_chiusa.jpg?v=1486506113","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\r\u003cp\u003eThe Anniversary Collection stems from the oldest perfume tradition. An innovative stylistic challenge that wishes to give perfume its original scent. The selection of high quality and rare raw materials only allow a limited annual production. Each precious bottle is catalogued with the year of production. The recipe itself remains the same although, each year, it gets the sublime touch of nature. For this reason, each bottle will be a unique and collectible piece.\u003c\/p\u003e\r\u003cp\u003e\u003cb\u003eSize : \u003c\/b\u003e100 ml\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+{% comment %}
+        Below is modal content for Casanova 2016
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8658387784" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1582px;"><div class="owl-item active" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/casanova2_grande.jpeg?v=1486574925" class="img-responsive owl-lazy" alt="Casanova 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/casanova2_grande.jpeg?v=1486574925" style="opacity: 1;"></div></div><div class="owl-item" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/casanova_grande.jpeg?v=1486574928" class="img-responsive owl-lazy" alt="Casanova 100 ml Extrait De Parfum by Tiziana Terenzi"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/casanova-by-tiziana-terenzi" title="Casanova 100 ml Extrait De Parfum by Tiziana Terenzi">Casanova 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$340.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>As part of Terenzi‰۪s Anniversary collection, Casanova is produced in a small batch every year- handcrafted only using the rarest raw materials. Each precious bottle is marked with the year of production, like a precious wine.</span><br><br><span>Mysterious and sensual, like a masked ball in Venice.</span><br><span>A beautifully transporting and sensual fragrance; sheer yet complex, with creamy, powdery notes of myrr and amber mingled with a hint of white musk and cedarwood.</span><br><br><span><strong>Notes:</strong> Orchid, Myrr, Amber, White musk, Vetiver, Cedarwood</span><br><span>3.4 fl oz/100ml Extrait De Parfum encased in a luxury box.</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8658387784" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30258767624">
+                    Default Title - $340.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658387784", {"id":8658387784,"title":"Casanova 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"casanova-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Terenzi‰۪s Anniversary collection, Casanova is produced in a small batch every year- handcrafted only using the rarest raw materials. Each precious bottle is marked with the year of production, like a precious wine.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eMysterious and sensual, like a masked ball in Venice.\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003eA beautifully transporting and sensual fragrance; sheer yet complex, with creamy, powdery notes of myrr and amber mingled with a hint of white musk and cedarwood.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Orchid, Myrr, Amber, White musk, Vetiver, Cedarwood\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box.\u003c\/span\u003e","published_at":"2017-02-08T12:26:00-05:00","created_at":"2017-02-08T12:28:43-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["2016","Cologne","EDP","Feminine","Fragrance","Masculine","Perfume","Tiziana Terenzi","Unisex"],"price":34000,"price_min":34000,"price_max":34000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30258767624,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Casanova 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":34000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"8016741222382"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/casanova2.jpeg?v=1486574925","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/casanova.jpeg?v=1486574928"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/casanova2.jpeg?v=1486574925","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Terenzi‰۪s Anniversary collection, Casanova is produced in a small batch every year- handcrafted only using the rarest raw materials. Each precious bottle is marked with the year of production, like a precious wine.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eMysterious and sensual, like a masked ball in Venice.\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003eA beautifully transporting and sensual fragrance; sheer yet complex, with creamy, powdery notes of myrr and amber mingled with a hint of white musk and cedarwood.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Orchid, Myrr, Amber, White musk, Vetiver, Cedarwood\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box.\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Bigia
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8658396040" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 791px;"><div class="owl-item active" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/bigia_grande.jpeg?v=1486575023" class="img-responsive owl-lazy" alt="Bigia 100 ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/bigia_grande.jpeg?v=1486575023" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/bigia-by-tiziana-terenzi" title="Bigia 100 ml Extrait De Parfum by Tiziana Terenzi">Bigia 100 ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$340.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>As part of Tiziana Terenzi's Anniversary collection, Bigia Extrait De Parfum is produced in a small batch every year, handcrafted using only the rarest raw materials. Each bottle is marked with the year of production, like a precious wine. A scent dedicated to the exceptional Donna Bigia, Paolo and Tiziana Terenzi's grandmother, who inspired this sweet, yet powerful fragrance.</span><br><br><span>Saffron rests on a base of white oud macerated for 20 years with Bulgarian rose absolute, to give the creation a magical, sensual and extraordinarily long-lasting touch. Precious ambers follow each other with the fruity notes of beautiful Italian landscapes, enveloped in wild flower heart notes.</span><br><br><span><strong>Notes:</strong> Passion Fruit, Saffron, Magnolia, Musk Rose, White Orchid, Rose Assoluto, White Oud, Agarwood, Oud, Amber, Musk</span><br><span>3.4 fl oz/100ml Extrait De Parfum encased in a luxury box</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8658396040" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30258888328">
+                    Default Title - $340.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658396040", {"id":8658396040,"title":"Bigia 100 ml Extrait De Parfum by Tiziana Terenzi","handle":"bigia-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Tiziana Terenzi's Anniversary collection, Bigia Extrait De Parfum is produced in a small batch every year, handcrafted using only the rarest raw materials. Each bottle is marked with the year of production, like a precious wine. A scent dedicated to the exceptional Donna Bigia, Paolo and Tiziana Terenzi's grandmother, who inspired this sweet, yet powerful fragrance.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eSaffron rests on a base of white oud macerated for 20 years with Bulgarian rose absolute, to give the creation a magical, sensual and extraordinarily long-lasting touch. Precious ambers follow each other with the fruity notes of beautiful Italian landscapes, enveloped in wild flower heart notes.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Passion Fruit, Saffron, Magnolia, Musk Rose, White Orchid, Rose Assoluto, White Oud, Agarwood, Oud, Amber, Musk\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box\u003c\/span\u003e","published_at":"2017-02-08T12:29:00-05:00","created_at":"2017-02-08T12:30:22-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["2016","Cologne","EDP","Feminine","Fragrance","Masculine","Perfume","Tiziana Terenzi","Unisex"],"price":34000,"price_min":34000,"price_max":34000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30258888328,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":null,"requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Bigia 100 ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":34000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":null}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/bigia.jpeg?v=1486575023"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/bigia.jpeg?v=1486575023","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Tiziana Terenzi's Anniversary collection, Bigia Extrait De Parfum is produced in a small batch every year, handcrafted using only the rarest raw materials. Each bottle is marked with the year of production, like a precious wine. A scent dedicated to the exceptional Donna Bigia, Paolo and Tiziana Terenzi's grandmother, who inspired this sweet, yet powerful fragrance.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eSaffron rests on a base of white oud macerated for 20 years with Bulgarian rose absolute, to give the creation a magical, sensual and extraordinarily long-lasting touch. Precious ambers follow each other with the fruity notes of beautiful Italian landscapes, enveloped in wild flower heart notes.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Passion Fruit, Saffron, Magnolia, Musk Rose, White Orchid, Rose Assoluto, White Oud, Agarwood, Oud, Amber, Musk\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Gumin
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8658477768" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 791px;"><div class="owl-item active" style="width: 791px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/gumin_grande.jpeg?v=1486575892" class="img-responsive owl-lazy" alt="Gumin 100ml Extrait De Parfum by Tiziana Terenzi" src="//cdn.shopify.com/s/files/1/1765/8667/products/gumin_grande.jpeg?v=1486575892" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/tiziana-terenzi-collection/products/gumin-100ml-extrait-de-parfum-by-tiziana-terenzi" title="Gumin 100ml Extrait De Parfum by Tiziana Terenzi">Gumin 100ml Extrait De Parfum by Tiziana Terenzi</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Tiziana%20Terenzi" title="">Tiziana Terenzi</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$340.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>As part of Tiziana Terenzi's Anniversary collection, Casanova Extrait De Parfum is produced in a small batch every year, handcrafted using only the rarest raw materials. Each bottle is marked with the year of production, like a precious wine.</span><br><br><span>This fragrance is dedicated to Guglielmo, the founder and pillar of Terenzi's artisan perfumery, which from generation to generation continues his journey in search of wonder. An extract dedicated to those who like to distinguish themselves with style that is understated but clear-cut, unique but elegant, powerful but not egocentric. A timeless, elegant perfume that speaks of glittering love, of reassuring tenderness, of a joyful eve that announces the greatest celebration in the world: that of life.</span><br><br><span>Opening with rich harmonies of citrus fruits from the sunniest of Italian orchards: Mandarin, Bergamot and Sicilian Oranges, Gumin has a subtle freshness that blends into sweetness o.</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8658477768" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30260104648">
+                    Default Title - $340.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8658477768", {"id":8658477768,"title":"Gumin 100ml Extrait De Parfum by Tiziana Terenzi","handle":"gumin-100ml-extrait-de-parfum-by-tiziana-terenzi","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Tiziana Terenzi's Anniversary collection, Casanova Extrait De Parfum is produced in a small batch every year, handcrafted using only the rarest raw materials. Each bottle is marked with the year of production, like a precious wine.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eThis fragrance is dedicated to Guglielmo, the founder and pillar of Terenzi's artisan perfumery, which from generation to generation continues his journey in search of wonder. An extract dedicated to those who like to distinguish themselves with style that is understated but clear-cut, unique but elegant, powerful but not egocentric. A timeless, elegant perfume that speaks of glittering love, of reassuring tenderness, of a joyful eve that announces the greatest celebration in the world: that of life.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eOpening with rich harmonies of citrus fruits from the sunniest of Italian orchards: Mandarin, Bergamot and Sicilian Oranges, Gumin has a subtle freshness that blends into sweetness of pineapple fruit combined with jasmine, violet and rose, strengthened by the force of amber. This artistic perfume gracefully rests on a powerful base note of precious Sandalwood, white Oud and Musk.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Pineapple, Orange, Bergamot, Mandarin, Jasmine, Rose, Violet, Amber, Oud, Birchwood, Musk, Sandalwood\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box\u003c\/span\u003e","published_at":"2017-02-08T12:43:00-05:00","created_at":"2017-02-08T12:44:50-05:00","vendor":"Tiziana Terenzi","type":"Perfume","tags":["2016","Cologne","EDP","Fragrance","Men","Perfume","Tiziana Terenzi","Unisex","Women"],"price":34000,"price_min":34000,"price_max":34000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30260104648,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Gumin 100ml Extrait De Parfum by Tiziana Terenzi","public_title":null,"options":["Default Title"],"price":34000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":""}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/gumin.jpeg?v=1486575892"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/gumin.jpeg?v=1486575892","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs part of Tiziana Terenzi's Anniversary collection, Casanova Extrait De Parfum is produced in a small batch every year, handcrafted using only the rarest raw materials. Each bottle is marked with the year of production, like a precious wine.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eThis fragrance is dedicated to Guglielmo, the founder and pillar of Terenzi's artisan perfumery, which from generation to generation continues his journey in search of wonder. An extract dedicated to those who like to distinguish themselves with style that is understated but clear-cut, unique but elegant, powerful but not egocentric. A timeless, elegant perfume that speaks of glittering love, of reassuring tenderness, of a joyful eve that announces the greatest celebration in the world: that of life.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003eOpening with rich harmonies of citrus fruits from the sunniest of Italian orchards: Mandarin, Bergamot and Sicilian Oranges, Gumin has a subtle freshness that blends into sweetness of pineapple fruit combined with jasmine, violet and rose, strengthened by the force of amber. This artistic perfume gracefully rests on a powerful base note of precious Sandalwood, white Oud and Musk.\u003c\/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan\u003e\u003cstrong\u003eNotes:\u003c\/strong\u003e Pineapple, Orange, Bergamot, Mandarin, Jasmine, Rose, Violet, Amber, Oud, Birchwood, Musk, Sandalwood\u003c\/span\u003e\u003cbr\u003e\u003cspan\u003e3.4 fl oz\/100ml Extrait De Parfum encased in a luxury box\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>

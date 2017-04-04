@@ -1,0 +1,592 @@
+<!-- /templates/page.liquid -->
+
+{% include 'breadcrumbs' %}
+
+<div class="{{ settings.theme_layout_type }}">
+  <div class="row">
+    <div id="main" role="main" class="col-sm-12 wrap-page">
+      <h1>{{ page.title }}</h1>
+
+      {% comment %}
+        Regular page content goes here.
+      {% endcomment %}
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- MODALS -->
+
+{% for product in collection.products %}
+  {% include 'product-quick-view' %}
+{% endfor %}
+
+<div id="product-zoom" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+
+          <button type="button" class="zoom-cmd zoom-next"> <i class="fa fa-angle-right"></i> </button>
+          <button type="button" class="zoom-cmd zoom-prev"> <i class="fa fa-angle-left"></i> </button>
+          <img src="{{ 'img_load.gif' | asset_url }}" class="zoom-img-load"/>
+          <div class="modal-zoom-container">
+            <img src="" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if settings.layout_type == "2" or settings.layout_type == "3" %}
+  <div id="size-chart-modal" class="modal-zoom" role="dialog" aria-hidden="true">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>
+          <div class="modal-zoom-container">
+            <img src="{{ 'sizechart.jpg' | asset_url }}" class="zoom-img img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% include 'newsletter' %}
+
+<iframe src="/17658667/digital_wallets/dialog" scrolling="no" style="position: fixed; top: 40px; left: 0px; z-index: 99999; height: 0px; width: 0px; border: 0px;"></iframe>
+
+
+<!-- MODALS -->
+
+
+{% comment %}
+        Below is modal content for Star of the Season
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8666793864" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 499px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/Star426_grande.jpg?v=1487627757" class="img-responsive owl-lazy" alt="Star of the Season 75 ml by Orlov" src="//cdn.shopify.com/s/files/1/1765/8667/products/Star426_grande.jpg?v=1487627757" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/star-of-the-season-75-ml-by-orlov" title="Star of the Season 75 ml by Orlov">Star of the Season 75 ml by Orlov</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$270.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p>Richer, deeper, more potent and sensuous still, the premium version of <em>Star of the Season</em> boasts a truly outrageous dose of precious iris. Lusher vanilla and almond accents enhance the scent’s Oriental vibe.&nbsp; A patchouli heart adds a duskier tone to the delectable blend.</p>
+<p>In French, “gold digger” translates as croqueuse de diamant, “diamond cruncher”. In a sly play on the expression, Star of the Season turns the most expensive diamond ever sold at an auction into a 100-carat indulgence.</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666793864" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30337954184">
+                    Default Title - $270.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666793864", {"id":8666793864,"title":"Star of the Season 75 ml by Orlov","handle":"star-of-the-season-75-ml-by-orlov","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eRicher, deeper, more potent and sensuous still, the premium version of \u003cem\u003eStar of the Season\u003c\/em\u003e boasts a truly outrageous dose of precious iris. Lusher vanilla and almond accents enhance the scent’s Oriental vibe.  A patchouli heart adds a duskier tone to the delectable blend.\u003c\/p\u003e\n\u003cp\u003eIn French, “gold digger” translates as croqueuse de diamant, “diamond cruncher”. In a sly play on the expression, Star of the Season turns the most expensive diamond ever sold at an auction into a 100-carat indulgence.\u003c\/p\u003e","published_at":"2017-02-09T14:53:00-05:00","created_at":"2017-02-09T14:56:43-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Fragrance","Orlov","Orlov Paris","Perfume","Women"],"price":27000,"price_min":27000,"price_max":27000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30337954184,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5500","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Star of the Season 75 ml by Orlov","public_title":null,"options":["Default Title"],"price":27000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006008"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Star426.jpg?v=1487627757"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/Star426.jpg?v=1487627757","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eRicher, deeper, more potent and sensuous still, the premium version of \u003cem\u003eStar of the Season\u003c\/em\u003e boasts a truly outrageous dose of precious iris. Lusher vanilla and almond accents enhance the scent’s Oriental vibe.  A patchouli heart adds a duskier tone to the delectable blend.\u003c\/p\u003e\n\u003cp\u003eIn French, “gold digger” translates as croqueuse de diamant, “diamond cruncher”. In a sly play on the expression, Star of the Season turns the most expensive diamond ever sold at an auction into a 100-carat indulgence.\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Sea of Light
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8666811976" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 499px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/sea-of-light-01_0_grande.jpg?v=1486670366" class="img-responsive owl-lazy" alt="Sea of Light 75 ml by Orlov Paris" src="//cdn.shopify.com/s/files/1/1765/8667/products/sea-of-light-01_0_grande.jpg?v=1486670366" style="opacity: 1;"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/sea-of-light-75-ml-by-orlov-paris" title="Sea of Light 75 ml by Orlov Paris">Sea of Light 75 ml by Orlov Paris</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$270.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>As limpid as a diamond of the first water, this brilliant variation on the eau de Cologne draws its inspiration from the mythical, 182-carat Daria-i-Noor, which means “sea of light” in Persian. Luminous grapefruit shines on a bright citrus accord, enhanced with a trio of festive fruity notes: raspy blackcurrant, velvety peach and bracing buchu, a leaf with mint and rhubarb facets. Dewy lily-of-the-valley and a salty splash of sea spray conjure cool, glinting waves, fringed with an ethereal foam of white musks…</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666811976" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30338088712">
+                    Default Title - $270.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666811976", {"id":8666811976,"title":"Sea of Light 75 ml by Orlov Paris","handle":"sea-of-light-75-ml-by-orlov-paris","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs limpid as a diamond of the first water, this brilliant variation on the eau de Cologne draws its inspiration from the mythical, 182-carat Daria-i-Noor, which means “sea of light” in Persian. Luminous grapefruit shines on a bright citrus accord, enhanced with a trio of festive fruity notes: raspy blackcurrant, velvety peach and bracing buchu, a leaf with mint and rhubarb facets. Dewy lily-of-the-valley and a salty splash of sea spray conjure cool, glinting waves, fringed with an ethereal foam of white musks…\u003c\/span\u003e","published_at":"2017-02-09T14:57:00-05:00","created_at":"2017-02-09T14:59:25-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Fragrance","Orlov","Orlov Paris","Perfume","Women"],"price":27000,"price_min":27000,"price_max":27000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30338088712,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5501","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Sea of Light 75 ml by Orlov Paris","public_title":null,"options":["Default Title"],"price":27000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006015"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/sea-of-light-01_0.jpg?v=1486670366"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/sea-of-light-01_0.jpg?v=1486670366","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eAs limpid as a diamond of the first water, this brilliant variation on the eau de Cologne draws its inspiration from the mythical, 182-carat Daria-i-Noor, which means “sea of light” in Persian. Luminous grapefruit shines on a bright citrus accord, enhanced with a trio of festive fruity notes: raspy blackcurrant, velvety peach and bracing buchu, a leaf with mint and rhubarb facets. Dewy lily-of-the-valley and a salty splash of sea spray conjure cool, glinting waves, fringed with an ethereal foam of white musks…\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+{% comment %}
+        Below is modal content for Cross of Asia
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8666825864" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 998px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/cross-of-asia-01_0_grande.jpg?v=1486670487" class="img-responsive owl-lazy" alt="Cross of Asia 75 ml by Orlov Paris" src="//cdn.shopify.com/s/files/1/1765/8667/products/cross-of-asia-01_0_grande.jpg?v=1486670487" style="opacity: 1;"></div></div><div class="owl-item" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/cross-of-asia-02_grande.jpg?v=1486670488" class="img-responsive owl-lazy" alt="Cross of Asia 75 ml by Orlov Paris"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/cross-of-asia-75-ml-by-orlov-paris" title="Cross of Asia 75 ml by Orlov Paris">Cross of Asia 75 ml by Orlov Paris</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$270.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>Inspired by a spectacular champagne-colored stone, </span><em>Cross of Asia</em><span> is that rarest of gems: a fragrance which sheds new light on a classic note. Like an expert diamond cutter, Dominique Ropion has studied ylang-ylang closely in order to bring out each of its facets. Surprising hints of green apple and crystalline pear. Spices, enhanced by cool coriander and essence of cypress. A glowing rose note and heady white floral effects, set off by orange blossom, tuberose and jasmine absolutes. Finally, a lash of leather reveals the yellow bloom‰۪s secretly animal nature‰Û_</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666825864" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30338158792">
+                    Default Title - $270.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666825864", {"id":8666825864,"title":"Cross of Asia 75 ml by Orlov Paris","handle":"cross-of-asia-75-ml-by-orlov-paris","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eInspired by a spectacular champagne-colored stone, \u003c\/span\u003e\u003cem\u003eCross of Asia\u003c\/em\u003e\u003cspan\u003e is that rarest of gems: a fragrance which sheds new light on a classic note. Like an expert diamond cutter, Dominique Ropion has studied ylang-ylang closely in order to bring out each of its facets. Surprising hints of green apple and crystalline pear. Spices, enhanced by cool coriander and essence of cypress. A glowing rose note and heady white floral effects, set off by orange blossom, tuberose and jasmine absolutes. Finally, a lash of leather reveals the yellow bloom‰۪s secretly animal nature‰Û_\u003c\/span\u003e","published_at":"2017-02-09T14:59:00-05:00","created_at":"2017-02-09T15:01:26-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Feminine","Fragrance","Orlov","Orlov Paris","Perfume"],"price":27000,"price_min":27000,"price_max":27000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30338158792,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5502","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Cross of Asia 75 ml by Orlov Paris","public_title":null,"options":["Default Title"],"price":27000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006022"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/cross-of-asia-01_0.jpg?v=1486670487","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/cross-of-asia-02.jpg?v=1486670488"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/cross-of-asia-01_0.jpg?v=1486670487","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eInspired by a spectacular champagne-colored stone, \u003c\/span\u003e\u003cem\u003eCross of Asia\u003c\/em\u003e\u003cspan\u003e is that rarest of gems: a fragrance which sheds new light on a classic note. Like an expert diamond cutter, Dominique Ropion has studied ylang-ylang closely in order to bring out each of its facets. Surprising hints of green apple and crystalline pear. Spices, enhanced by cool coriander and essence of cypress. A glowing rose note and heady white floral effects, set off by orange blossom, tuberose and jasmine absolutes. Finally, a lash of leather reveals the yellow bloom‰۪s secretly animal nature‰Û_\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Orlov
+{% endcomment %}
+
+<div class="modal quick-view" id="productQuickView-8666835976" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 998px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/orlov-01_8_grande.jpg?v=1486670571" class="img-responsive owl-lazy" alt="Orlov 75 ml by Orlov Paris" src="//cdn.shopify.com/s/files/1/1765/8667/products/orlov-01_8_grande.jpg?v=1486670571" style="opacity: 1;"></div></div><div class="owl-item" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/orlov-02_grande.jpg?v=1486670572" class="img-responsive owl-lazy" alt="Orlov 75 ml by Orlov Paris"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/orlov-75-ml-by-orlov-paris" title="Orlov 75 ml by Orlov Paris">Orlov 75 ml by Orlov Paris</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$270.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8">
+<p class="align-justify">The glamor of tuberose. The brightness of orange blossom. The sensuousness of jasmine sambac… In <em>Orlov</em>, the master perfumer Dominique Ropion has picked the most radiant facets of these rich floral absolutes to compose a single, perfect blossom: the quintessential white flower. As dazzling as its namesake, the legendary diamond that crowns the Imperial scepter of Russia, this flawless floral gem is set in cool-as-platinum iris, on a backdrop of dark, velvet-soft leather…</p>
+<p class="align-justify">A spectacular 189-carat white diamond with a bluish-green tint, the Orlov is one of the few historic diamonds to retain its original Indian rose-style cut. According to legend, it was stolen in the 18<sup>th</sup> century from a Hindu temple, where it was the eye of an idol, by a French grenadier who had converted to Hinduism in order to gain the priests’ trust. After changing hands several times, the diamond was bought by Count Grigo.</p></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666835976" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30338246088">
+                    Default Title - $270.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666835976", {"id":8666835976,"title":"Orlov 75 ml by Orlov Paris","handle":"orlov-75-ml-by-orlov-paris","description":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp class=\"align-justify\"\u003eThe glamor of tuberose. The brightness of orange blossom. The sensuousness of jasmine sambac… In \u003cem\u003eOrlov\u003c\/em\u003e, the master perfumer Dominique Ropion has picked the most radiant facets of these rich floral absolutes to compose a single, perfect blossom: the quintessential white flower. As dazzling as its namesake, the legendary diamond that crowns the Imperial scepter of Russia, this flawless floral gem is set in cool-as-platinum iris, on a backdrop of dark, velvet-soft leather…\u003c\/p\u003e\n\u003cp class=\"align-justify\"\u003eA spectacular 189-carat white diamond with a bluish-green tint, the Orlov is one of the few historic diamonds to retain its original Indian rose-style cut. According to legend, it was stolen in the 18\u003csup\u003eth\u003c\/sup\u003e century from a Hindu temple, where it was the eye of an idol, by a French grenadier who had converted to Hinduism in order to gain the priests’ trust. After changing hands several times, the diamond was bought by Count Grigory Orlov (1734–1783). He offered it to his former lover, the Empress Catherine the Great of Russia, in the hopes of rekindling their affair. It didn’t, but the Empress had his gift set atop the Imperial Scepter of Russia. Today, the Orlov is part of the Diamond Fund of the Kremlin, in Moscow.\u003c\/p\u003e","published_at":"2017-02-09T15:01:00-05:00","created_at":"2017-02-09T15:02:51-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Fragrance","Orlov","Orlov Paris","Perfume","Women"],"price":27000,"price_min":27000,"price_max":27000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30338246088,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5503","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Orlov 75 ml by Orlov Paris","public_title":null,"options":["Default Title"],"price":27000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006039"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/orlov-01_8.jpg?v=1486670571","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/orlov-02.jpg?v=1486670572"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/orlov-01_8.jpg?v=1486670571","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\n\u003cp class=\"align-justify\"\u003eThe glamor of tuberose. The brightness of orange blossom. The sensuousness of jasmine sambac… In \u003cem\u003eOrlov\u003c\/em\u003e, the master perfumer Dominique Ropion has picked the most radiant facets of these rich floral absolutes to compose a single, perfect blossom: the quintessential white flower. As dazzling as its namesake, the legendary diamond that crowns the Imperial scepter of Russia, this flawless floral gem is set in cool-as-platinum iris, on a backdrop of dark, velvet-soft leather…\u003c\/p\u003e\n\u003cp class=\"align-justify\"\u003eA spectacular 189-carat white diamond with a bluish-green tint, the Orlov is one of the few historic diamonds to retain its original Indian rose-style cut. According to legend, it was stolen in the 18\u003csup\u003eth\u003c\/sup\u003e century from a Hindu temple, where it was the eye of an idol, by a French grenadier who had converted to Hinduism in order to gain the priests’ trust. After changing hands several times, the diamond was bought by Count Grigory Orlov (1734–1783). He offered it to his former lover, the Empress Catherine the Great of Russia, in the hopes of rekindling their affair. It didn’t, but the Empress had his gift set atop the Imperial Scepter of Russia. Today, the Orlov is part of the Diamond Fund of the Kremlin, in Moscow.\u003c\/p\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
+
+{% comment %}
+        Below is modal content for Flame of Gold
+{% endcomment %}
+
+
+<div class="modal quick-view" id="productQuickView-8666848776" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="zoom-close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-times"></i> </button>      
+        <div class="container-fluid">
+          <div class="row">
+            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+              <div class="col-sm-6">
+                
+                            
+                  <div class=" col-sm-12 ">
+                    <div class="quick-product-photo-container owl-carousel owl-theme owl-loaded">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1497px;"><div class="owl-item active" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/flame-of-gold-01_0_grande.jpg?v=1486670656" class="img-responsive owl-lazy" alt="Flame of Gold 75 ml by Orlov Paris" src="//cdn.shopify.com/s/files/1/1765/8667/products/flame-of-gold-01_0_grande.jpg?v=1486670656" style="opacity: 1;"></div></div><div class="owl-item" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/flame-of-gold-04_grande.jpg?v=1486670656" class="img-responsive owl-lazy" alt="Flame of Gold 75 ml by Orlov Paris"></div></div><div class="owl-item" style="width: 499px; margin-right: 0px;"><div><img data-src="//cdn.shopify.com/s/files/1/1765/8667/products/flame-of-gold-02_grande.jpg?v=1486670657" class="img-responsive owl-lazy" alt="Flame of Gold 75 ml by Orlov Paris"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  </div>
+                
+              </div>
+
+              <div class="col-sm-6 product-details">
+                <h2 class="product-name"><a href="/collections/orlov-paris-collection/products/flame-of-gold-75-ml-by-orlov-paris" title="Flame of Gold 75 ml by Orlov Paris">Flame of Gold 75 ml by Orlov Paris</a></h2>
+                
+                
+                
+                <h2 itemprop="brand" class="brand"><a href="/collections/vendors?q=Orlov%20Paris" title="">Orlov Paris</a></h2>
+
+                <div id="product-price-wrap" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="delta">
+                    
+                    
+                    <span id="ProductPrice" class="product-price money" itemprop="price">$270.00</span>
+                    
+                </div>
+
+                <div itemprop="description" class="quick-description rte"><meta charset="utf-8"><span>Sparkling with a thousand fires, this blazing blend was named from a canary-yellow diamond owned by flame-haired movie star Greer Garson. To conjure the gem‰۪s tawny glow, the perfumer has fused the two most sensuous notes in his palette. An extravagant overdose of velvet-smooth musk suffuses the scent with a luxurious, captivating aura, fired up by powerfully radiant amber notes. Sweetly smoky guaiac, cocoa-dark patchouli, bracing Virginia cedar and luscious sandalwood: the richest wood essences fuel this lustrous </span><em>Flame of Gold.</em><span> An incandescent delight.</span></div>
+
+                
+                
+
+                <div id="product-variants" style="display:none" class=" hidden">
+                  <select id="product-select-8666848776" name="id" class="form-control single-option-selector" style="display: none;">
+                  
+                    <option selected="" value="30338309576">
+                    Default Title - $270.00
+                    </option>
+                  
+                  </select>
+                </div> 
+
+                       
+                       
+                <div id="backorder" class="hidden">
+                  <p><span id="selected-variant"></span> is back-ordered. We will ship it separately in 10 to 15 days.</p>
+                </div>
+
+                <div id="quantity-section">
+                  <label for="Quantity" class="quantity-selector swatch-title">Quantity:</label>
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <div class="input-group quantity-group">
+                        <span class="input-group-btn">
+                          <button class="btn  btn-minus" type="button">-</button>
+                        </span>
+
+                        <input type="text" id="Quantity" name="quantity" value="1" min="1" class="form-control quantity-selector quantity-box" placeholder="Qty.">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-plus " type="button">+</button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+
+                <div id="product-add">
+                  <button name="add" id="AddToCart" class="btn btn-default btn-large"><span id="AddToCartText">Add to Cart</span></button>
+                </div>
+              </div>
+
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    jQuery(document).ready(function() {
+      jQuery.data( document.body, "product-8666848776", {"id":8666848776,"title":"Flame of Gold 75 ml by Orlov Paris","handle":"flame-of-gold-75-ml-by-orlov-paris","description":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eSparkling with a thousand fires, this blazing blend was named from a canary-yellow diamond owned by flame-haired movie star Greer Garson. To conjure the gem‰۪s tawny glow, the perfumer has fused the two most sensuous notes in his palette. An extravagant overdose of velvet-smooth musk suffuses the scent with a luxurious, captivating aura, fired up by powerfully radiant amber notes. Sweetly smoky guaiac, cocoa-dark patchouli, bracing Virginia cedar and luscious sandalwood: the richest wood essences fuel this lustrous \u003c\/span\u003e\u003cem\u003eFlame of Gold.\u003c\/em\u003e\u003cspan\u003e An incandescent delight.\u003c\/span\u003e","published_at":"2017-02-09T15:03:00-05:00","created_at":"2017-02-09T15:04:15-05:00","vendor":"Orlov Paris","type":"Perfume","tags":["Feminine","Fragrance","Orlov","Orlov Paris","Perfume"],"price":27000,"price_min":27000,"price_max":27000,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":30338309576,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"OV-5504","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Flame of Gold 75 ml by Orlov Paris","public_title":null,"options":["Default Title"],"price":27000,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":"853488006046"}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/flame-of-gold-01_0.jpg?v=1486670656","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/flame-of-gold-04.jpg?v=1486670656","\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/flame-of-gold-02.jpg?v=1486670657"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/1765\/8667\/products\/flame-of-gold-01_0.jpg?v=1486670656","options":["Title"],"content":"\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eSparkling with a thousand fires, this blazing blend was named from a canary-yellow diamond owned by flame-haired movie star Greer Garson. To conjure the gem‰۪s tawny glow, the perfumer has fused the two most sensuous notes in his palette. An extravagant overdose of velvet-smooth musk suffuses the scent with a luxurious, captivating aura, fired up by powerfully radiant amber notes. Sweetly smoky guaiac, cocoa-dark patchouli, bracing Virginia cedar and luscious sandalwood: the richest wood essences fuel this lustrous \u003c\/span\u003e\u003cem\u003eFlame of Gold.\u003c\/em\u003e\u003cspan\u003e An incandescent delight.\u003c\/span\u003e"} );
+    });
+  });
+
+  </script>
+</div>
+
